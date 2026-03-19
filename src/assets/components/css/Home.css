@@ -1,0 +1,67 @@
+.banniere-accueil {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 1.5rem;
+}
+
+.texte-degrade {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--couleur-texte);
+  position: relative;
+}
+
+[data-theme="light"] .texte-degrade {
+  -webkit-text-stroke: 1px #000;
+}
+
+.banniere-accueil p {
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  color: var(--sous-texte);
+  font-size: 1.1rem;
+}
+
+.groupe-boutons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: auto;
+}
+
+.bouton {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.bouton-principal {
+  background-color: var(--couleur-accent);
+  color: var(--couleur-fond);
+}
+
+.bouton-secondaire {
+  border: 1px solid var(--couleur-bordure);
+  color: var(--couleur-texte);
+}
+
+.bouton:hover {
+  transform: translateY(-3px);
+}

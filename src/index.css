@@ -1,0 +1,54 @@
+/* --- Variables  pour le thème --- */
+:root {
+  --couleur-fond: #ffffff;
+  --couleur-texte: #0f0f0f;
+  --couleur-accent: #000000;
+  --fond-carte: #f4f4f5;
+  --couleur-bordure: #e4e4e7;
+  --sous-texte: #52525b;
+}
+
+[data-theme="dark"] {
+  --couleur-fond: #050505;
+  --couleur-texte: #ffffff;
+  --couleur-accent: #ffffff;
+  --fond-carte: #121212;
+  --couleur-bordure: #27272a;
+  --sous-texte: #a1a1aa;
+}
+/* --------------------------- */
+/* --- Proprietes de base --- */
+/* ------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+a,
+li,
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body,
+p {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--couleur-fond);
+  color: var(--couleur-texte);
+  line-height: 1.6;
+  overflow-x: hidden;
+}

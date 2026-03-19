@@ -1,0 +1,549 @@
+/* --------------------------- */
+/* --- Proprietes de base --- */
+/* ------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+a,
+li,
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body,
+p {
+  font-size: 16px;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--couleur-fond);
+  color: var(--couleur-texte);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ------------------ */
+/* --- Navigation --- */
+/* -------------------*/
+
+.barre-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(var(--couleur-fond), 0.8);
+  backdrop-filter: blur(10px); /* flou au niveau du header lors du scroll */
+  z-index: 1000;
+  border-bottom: 1px solid transparent;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+}
+
+.point {
+  color: white;
+}
+
+.liens-navigation {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.liens-navigation a {
+  text-decoration: none;
+  color: var(--couleur-texte);
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.liens-navigation a:hover {
+  opacity: 1;
+}
+
+#bouton-theme {
+  background: none;
+  border: none;
+  color: var(--couleur-texte);
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+#bouton-theme:hover {
+  transform: rotate(15deg);
+}
+
+/* -------------------- */
+/* ---  Accueil ------ */
+/* ------------------ */
+
+.banniere-accueil {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 1.5rem;
+}
+
+.texte-degrade {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--couleur-texte);
+  position: relative;
+}
+
+[data-theme="light"] .texte-degrade {
+  -webkit-text-stroke: 1px #000;
+}
+
+.banniere-accueil p {
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  color: var(--sous-texte);
+  font-size: 1.1rem;
+}
+
+.groupe-boutons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: auto;
+}
+
+.bouton {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.bouton-principal {
+  background-color: var(--couleur-accent);
+  color: var(--couleur-fond);
+}
+
+.bouton-secondaire {
+  border: 1px solid var(--couleur-bordure);
+  color: var(--couleur-texte);
+}
+
+.bouton:hover {
+  transform: translateY(-3px);
+}
+
+/* --------------- */
+/* --- Scroll---- */
+/* --------------*/
+
+.apparition {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.apparition.actif {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delai-1 {
+  transition-delay: 0.1s;
+}
+.delai-2 {
+  transition-delay: 0.2s;
+}
+.delai-3 {
+  transition-delay: 0.3s;
+}
+
+/* ------------------------------ */
+/* --- Indicateur Défilement --- */
+/* ---------------------------- */
+
+.indicateur-defilement {
+  position: absolute;
+  bottom: 2rem;
+  color: var(--sous-texte);
+  font-size: 1.5rem;
+}
+
+.rebond {
+  display: inline-block;
+  animation: rebond 3s infinite;
+}
+
+@keyframes rebond {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* --------------- */
+/* --- Projets --- */
+/* --------------- */
+
+.section-page {
+  padding: 6rem 1rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titre-section {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  letter-spacing: -1px;
+  text-decoration: underline;
+}
+
+.grille-projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.carte-projet {
+  background: var(--fond-carte);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.carte-projet:hover {
+  transform: scale(1.02);
+  border-color: var(--couleur-texte);
+}
+
+.carte-projet3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.carte-projet p {
+  color: var(--sous-texte);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.titre-carte {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: var(--sous-texte);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.img-projet img {
+  border-radius: 10px;
+  /* taille fixe pr chaque image d'un projet*/
+  height: 200px;
+  width: 300px;
+  border: 1px solid var(--couleur-bordure);
+}
+
+.img-projet1 img {
+  border-radius: 10px;
+  /* taille fixe pr chaque image d'un projet*/
+}
+
+.projet-a-venir h2 {
+  /* ajt d'espace en haut et en bas*/
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.stack-used {
+  display: flex;
+  gap: 20px;
+}
+
+.stack-used span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 60px;
+  border-radius: 50%; /* pr faire un cercle parfait */
+
+  border: 1px solid var(--couleur-bordure);
+}
+
+.stack-used span img {
+  height: 24px;
+  width: auto;
+}
+
+/*  stack de Penthouse V2*/
+
+.stack-used-penthouse-a-venir {
+  display: flex;
+  gap: 20px;
+}
+
+.stack-used-penthouse-a-venir span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 60px;
+  border-radius: 50%; /* pr faire un cercle parfait */
+
+  border: 1px solid var(--couleur-bordure);
+}
+
+.stack-used-penthouse-a-venir span img {
+  height: 35px;
+  width: auto;
+}
+
+.js img {
+  border-radius: 3px;
+}
+
+/* ---------------------------- */
+/* Liens pour voir les projets */
+/* ---------------------------*/
+
+.lien-power-of-memory,
+.lien-penthouse,
+.lien-escape,
+.lien-bataille-naval,
+.lien-gladiator {
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+.lien-power-of-memory a,
+.lien-penthouse a,
+.lien-escape a,
+.lien-bataille-naval a,
+.lien-gladiator a {
+  color: var(--couleur-texte);
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+
+.lien-power-of-memory a::after,
+.lien-penthouse a::after,
+.lien-escape a::after,
+.lien-bataille-naval a::after,
+.lien-gladiator a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--couleur-texte);
+  transition: width 1s ease-in-out;
+}
+
+/* ajt de l'effet de survol sur "voir le projet" */
+
+.lien-power-of-memory a:hover::after,
+.lien-penthouse a:hover::after,
+.lien-escape a:hover::after,
+.lien-bataille-naval a:hover::after,
+.lien-gladiator a:hover::after {
+  width: 100%; /* Le trait prend tt la largeur du txt */
+}
+
+/* ------------------ */
+/* ---- FOOTER ----- */
+/* ---------------- */
+footer {
+  text-align: center;
+  padding: 5rem 1rem;
+  border-top: 1px solid var(--couleur-bordure);
+}
+
+.lien-email {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--couleur-texte);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.lien-email:hover {
+  border-bottom: 2px solid var(--couleur-texte);
+}
+
+.mail {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.rs {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.rs a {
+  color: var(--couleur-texte);
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.5s;
+}
+
+.rs a:hover {
+  transform: scale(1.1);
+}
+
+.droits-auteur {
+  font-size: 0.8rem;
+  color: var(--sous-texte);
+}
+
+/* --------------------- */
+/* --- RESPONSIVITE --- */
+/* --------------------- */
+
+@media (max-width: 768px) {
+  .barre-navigation {
+    padding: 1rem 3%;
+  }
+
+  .titre-section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .liens-navigation {
+    gap: 1rem; /* rapprochement de sliens */
+  }
+
+  .logo {
+    font-size: 1rem; /* reduction de la taille du logo */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* reduction de la taille du titre de poste */
+    margin-bottom: 1rem;
+  }
+
+  .banniere-accueil p {
+    font-size: 1rem;
+    padding: 0 5%;
+  }
+
+  /* empilat° des boutons */
+  .groupe-boutons {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: row; /* Force la ligne au lieu de la colonne */
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .bouton {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 1rem; /* ajt d'une ptit marge sur les cotes */
+  }
+
+  .carte-projet {
+    width: 100%;
+  }
+
+  .projet-a-venir h2 {
+    /* augmententation de l'espace*/
+    margin-top: 20%;
+  }
+  .contenu-pied-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .mail {
+    font-size: 1rem;
+  }
+}
+
+/* Animation */
+
+.light-rays-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contenu-banniere {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "date": "Sep 2025 - Dec 2025",
+    "title": "Power Of Memory",
+    "description": "Conception en équipe d’une plateforme alliant profils personnalisés et classements dynamiques.",
+    "image": "/public/images/power-of-memory-interface.png",
+    "githubUrl": "https://github.com/Nolan-30/Power-of-Memory",
+    "stack": [
+      { "name": "HTML", "icon": "public/images/html.png", "class": "html" },
+      { "name": "CSS", "icon": "/public/images/css.png", "class": "css" },
+      { "name": "JavaScript", "icon": "/public/images/JS.png", "class": "js" },
+      { "name": "SQL", "icon": "/public/images/sql.png", "class": "sql" },
+      { "name": "PHP", "icon": "/public/images/php.png", "class": "php" }
+    ]
+  },
+  {
+    "id": 2,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "date": "Oct 2025 - Oct 2025",
+    "title": "Bataille Navale",
+    "description": "Jeu de bataille navale contre une IA. Une simulation stratégique en Python à l'architecture modulaire et épurée.",
+    "githubUrl": "https://github.com/Nolan-30/Bataille-Navale",
+    "stack": [
+      { "name": "Python", "icon": "/public/images/python.png", "class": "python" }
+    ]
+  },
+  {
+    "id": 3,
+    "incoming": false,
+    "label": "Projet Personnel",
+    "date": "Oct 2025 - Jan 2026",
+    "title": "Penthouse",
+    "description": "Réalisation d’une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
+    "image": "/public/images/PTS.jpg",
+    "githubUrl": "https://nolan-30.github.io/Penthouse/",
+    "stack": [
+      { "name": "HTML", "icon": "/public/images/html.png", "class": "html" },
+      { "name": "CSS", "icon": "/public/images/css.png", "class": "css" },
+      { "name": "AOS", "icon": "/public/images/AOS.png", "class": "aos" }
+    ]
+  },
+  {
+    "id": 4,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "date": "Jan 2026 - Jan 2026",
+    "title": "Gladiator Arena",
+    "description": "Affrontez un panel d'ennemis variés avec système de classes, gestion d’inventaire et combats au tour par tour.",
+    "githubUrl": "https://github.com/Nolan-30/Gladiator-Arena",
+    "stack": [
+      { "name": "Java", "icon": "/public/images/java-removebg-preview (2).png", "class": "java" }
+    ]
+  },
+  {
+    "id": 5,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "date": "Fev 2026 - Fev 2026",
+    "title": "Escape",
+    "description": "Survivez à une pluie d'objets en esquivant les bombes et en collectant des bonus stratégiques.",
+    "image": "/public/images/Escape.png",
+    "githubUrl": "https://mega.nz/fm/fsh1WSyR",
+    "stack": [
+      { "name": "Unity", "icon": "/public/images/Unity.png", "class": "unity" },
+      { "name": "C#", "icon": "/public/images/C-Sharp.png", "class": "csharp" }
+    ]
+  },
+  {
+    "id": 6,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "date": "Mars 2026 - Mars 2026",
+    "title": "Trumposaur",
+    "description": "Un jeu de clic satirique où vous transformez le buzz médiatique en ressources pour bâtir votre empire.",
+    "image": "/public/images/trumpnosaur-interface.png",
+    "githubUrl": "https://github.com/Nolan-30/Power-of-Memory",
+    "stack": [
+      { "name": "TypeScript", "icon": "/public/images/ts.png", "class": "ts" },
+       { "name": "Tailwind", "icon":"/public/images/tailwind.png", "class": "tailwind"},
+      { "name": "NextJS", "icon": "/public/images/nextjs.png", "class": "nextjs" }
+    ]
+  },
+  {
+    "id": 7,
+    "incoming": true,
+    "label": "Projet Scolaire",
+    "date": "Oct 2025 - Mai 2026",
+    "title": "SNK Wiki",
+    "description": "Site interactif intégrant un système de progression par quiz pour débloquer chaque section de la page.",
+    "githubUrl": "",
+    "stack": [
+      { "name": "HTML", "icon": "/images/html.png", "class": "html" },
+      { "name": "CSS", "icon": "/images/css.png", "class": "css" },
+      { "name": "JS", "icon": "/images/JS.png", "class": "js" },
+      { "name": "SQL", "icon": "/images/sql.png", "class": "sql" },
+      { "name": "PHP", "icon": "/images/php.png", "class": "php" }
+    ]
+  },
+  {
+    "id": 8,
+    "incoming": true,
+    "label": "Projet Personnel",
+    "date": "À venir",
+    "title": "Penthouse V2",
+    "description": "Réalisation d’une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
+    "githubUrl": "",
+    "stack": [
+      { "name": "React", "icon": "/images/react.png", "class": "react" },
+      { "name": "Tailwind", "icon": "/images/tailwind.png", "class": "tailwind" }
+    ]
+  }
+]
