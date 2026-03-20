@@ -4,6 +4,7 @@ import Footer from "./assets/components/Footer";
 import Home from "./assets/components/Home";
 import Project from "./assets/components/Project";
 import LightRays from "./assets/components/LightRays";
+// import TextType from "./assets/components/TextType";
 
 function App() {
   return (

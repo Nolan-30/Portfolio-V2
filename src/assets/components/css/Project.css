@@ -104,4 +104,7 @@
     /* ptit reduction de la taille des images */
     height: 18px;
   }
+  .lien-projet {
+    font-size: 0.8rem;
+  }
 }

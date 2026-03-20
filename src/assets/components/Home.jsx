@@ -1,6 +1,8 @@
 import "./css/Home.css";
 import { motion } from "framer-motion";
 import LightRays from "./LightRays";
+import TextType from "./TextType";
+import StarBorder from "./StarBorder";
 
 export default function Home() {
   return (
@@ -18,7 +20,24 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Développeur Web <br />
+          {" "}
+          <TextType
+            text={["Développeur Web Full-stack"]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor
+            cursorCharacter="_"
+            texts={[
+              "Welcome to React Bits! Good to see you!",
+              "Build some amazing experiences!",
+            ]}
+            deletingSpeed={50}
+            variableSpeedEnabled={false}
+            variableSpeedMin={60}
+            variableSpeedMax={120}
+            cursorBlinkDuration={0.5}
+          />
+          {/* <br /> */}
           <span className="texte-degrade">Full-stack</span>
         </motion.h1>
         <motion.p
