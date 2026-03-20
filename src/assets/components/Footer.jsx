@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion"; // 1. Import indispensable
+import { motion } from "framer-motion";
 import "./css/Footer.css";
 
 export default function Footer() {

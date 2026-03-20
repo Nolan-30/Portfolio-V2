@@ -10,9 +10,7 @@
 }
 
 .carte-projet:hover {
-  transform: scale(1.02);
-  transition: all;
-  transition-duration: 500ms;
+  transition: border-color 500ms ease;
   cursor: pointer;
   border-color: var(--couleur-texte);
 }
@@ -42,6 +40,7 @@
 .stack-used {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .stack-used span {
