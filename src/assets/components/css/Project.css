@@ -40,7 +40,7 @@
 .stack-used {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* si y a plus de place ca passe a la ligne automatiquement*/
 }
 
 .stack-used span {
@@ -87,4 +87,21 @@
 
 .lien-projet a:hover::after {
   width: 100%; /* Le trait prend tt la largeur du txt */
+}
+
+/* RESPONSIVITE */
+
+@media (max-width: 768px) {
+  .carte-projet {
+    width: 80%;
+  }
+  .projet-a-venir h2 {
+    /* augmententation de l'espace*/
+    margin-top: 20%;
+  }
+
+  .stack-used span img {
+    /* ptit reduction de la taille des images */
+    height: 18px;
+  }
 }

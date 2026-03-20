@@ -52,3 +52,25 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
+
+/* RESPONSIVITE */
+
+@media (max-width: 768px) {
+  .contenu-banniere {
+    /* abaissement du txt*/
+    margin-top: 15%;
+  }
+  .contenu-banniere h1 {
+    /* abaissement du txt*/
+    font-size: 2.5rem;
+  }
+
+  .carte-projet {
+    width: 70%;
+  }
+
+  .projet-a-venir h2 {
+    /* augmententation de l'espace*/
+    margin-top: 50%;
+  }
+}
