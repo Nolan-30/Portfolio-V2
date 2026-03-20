@@ -7,7 +7,7 @@ export default function Home() {
     <main className="banniere-accueil">
       <LightRays
         raysOrigin="top-center"
-        raysColor="#b0b0b0"
+        raysColor="#ffffff"
         rayLength={0.5}
         lightSpread={5.5}
         raysSpeed={0.5}
