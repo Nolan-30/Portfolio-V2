@@ -38,15 +38,34 @@ export default function Home() {
             cursorBlinkDuration={0.5}
           />
           {/* <br /> */}
-          <span className="texte-degrade">Full-stack</span>
+          {/* <span className="texte-degrade">Full-stack</span> */}
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Étudiant à l'ESIEE-IT Coding Factory. Je construis des expériences web
-          modernes et sécurisées.
+          {" "}
+          <TextType
+            text={[
+              "Étudiant à l'ESIEE-IT Coding Factory. Je construis des expériences web modernes et sécurisées.",
+            ]}
+            typingSpeed={175}
+            pauseDuration={1500}
+            showCursor
+            cursorCharacter="_"
+            texts={[
+              "Welcome to React Bits! Good to see you!",
+              "Build some amazing experiences!",
+            ]}
+            deletingSpeed={50}
+            variableSpeedEnabled={false}
+            variableSpeedMin={60}
+            variableSpeedMax={120}
+            cursorBlinkDuration={0.5}
+          />
+          {/* Étudiant à l'ESIEE-IT Coding Factory. Je construis des expériences web
+          modernes et sécurisées. */}
         </motion.p>
 
         <motion.div
@@ -55,9 +74,17 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <a href="#projets" className="bouton bouton-secondaire">
+          <StarBorder
+            as="button"
+            className="custom-class"
+            color="magenta"
+            speed="5s"
+          >
             Voir mes projets
-          </a>
+          </StarBorder>
+          {/* <a href="#projets" className="bouton bouton-secondaire">
+            Voir mes projets
+          </a> */}
           <motion.a
             href="#contact"
             className="bouton bouton-principal"
