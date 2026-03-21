@@ -95,7 +95,7 @@
     "githubUrl": "",
     "stack": [
       { "name": "React", "icon": "/images/react.png", "class": "react" },
-      { "name": "Tailwind", "icon": "/images/v,reioberionetailwind.png", "class": "tailwind" }
+      { "name": "Tailwind", "icon": "/images/tailwind.png", "class": "tailwind" }
     ]
   }
 ]
