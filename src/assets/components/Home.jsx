@@ -5,7 +5,6 @@ import TextType from "./TextType";
 import StarBorder from "./StarBorder";
 import AnimatedContent from "./AnimatedContent";
 import SplitText from "./SplitText";
-import GradientText from "./GradientText";
 
 const handleAnimationComplete = () => {
   console.log("All letters have animated!"); // pr s'assurer que les lettres
@@ -56,7 +55,7 @@ export default function Home() {
             text={[
               "Étudiant à l'ESIEE-IT Coding Factory. Je construis des expériences web modernes et sécurisées.",
             ]}
-            typingSpeed={3}
+            typingSpeed={10}
             pauseDuration={500}
             showCursor
             cursorCharacter="_"
@@ -64,7 +63,7 @@ export default function Home() {
               "Welcome to React Bits! Good to see you!",
               "Build some amazing experiences!",
             ]}
-            deletingSpeed={50}
+            deletingSpeed={10}
             variableSpeedEnabled={false}
             variableSpeedMin={60}
             variableSpeedMax={120}

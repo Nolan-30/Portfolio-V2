@@ -10,14 +10,14 @@ export default function Project() {
     <section id="projets" className="section-page">
       <div className="container">
         <h2 className="titre-section">
-          <GradientText
+          {/* <GradientText
             colors={["#570562", "#FF9FFC", "#B19EEF"]}
             animationSpeed={8}
             showBorder={false}
             className="projets-realises-placement"
           >
             Projets Réalisés
-          </GradientText>
+          </GradientText> */}
         </h2>
         <div className="grille-projets">
           {projetsRealises.map((project) => (

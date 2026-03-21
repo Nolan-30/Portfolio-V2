@@ -8,13 +8,14 @@ export default function Header() {
     <header>
       <nav className="barre-navigation">
         <div className="logo">
+          <img src="a" alt="" />
           <GradientText
             colors={["#570562", "#FF9FFC", "#B19EEF"]}
             animationSpeed={8}
             showBorder={false}
             className="custom-class"
           >
-            Nolan D'almeida<span className="point">.</span>
+            Nolan D'almeida.
           </GradientText>
         </div>
 

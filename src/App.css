@@ -47,7 +47,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: rgba(var(--couleur-fond), 0.8);
-  backdrop-filter: blur(10px); /* flou au niveau du header lors du scroll */
+  /* backdrop-filter: blur(10px); supression du flou pr pouvoir la progression du scroll */
   z-index: 1000;
   border-bottom: 1px solid transparent;
 }

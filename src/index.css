@@ -9,7 +9,7 @@
 }
 
 [data-theme="dark"] {
-  --couleur-fond: #050505;
+  --couleur-fond: #000000;
   --couleur-texte: #ffffff;
   --couleur-accent: #ffffff;
   --fond-carte: #121212;

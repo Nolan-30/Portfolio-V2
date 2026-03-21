@@ -3,11 +3,21 @@ import Header from "./assets/components/Header";
 import Footer from "./assets/components/Footer";
 import Home from "./assets/components/Home";
 import Project from "./assets/components/Project";
-import LightRays from "./assets/components/LightRays";
+import FadeContent from "./assets/components/FadeContent";
+import { ScrollProgress } from "./assets/components/ScrollProgress";
 
 function App() {
   return (
     <>
+      <ScrollProgress />
+      <FadeContent
+        blur={true}
+        duration={1000}
+        easing="ease-out"
+        initialOpacity={0}
+      >
+        {/* Anything placed inside this container will be fade into view */}
+      </FadeContent>
       <Header />
 
       <Home />
