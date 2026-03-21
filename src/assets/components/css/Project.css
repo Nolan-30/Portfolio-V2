@@ -21,6 +21,18 @@
   margin-bottom: 1.5rem;
 }
 
+.projets-realises-placement {
+  position: absolute;
+  top: 1000px;
+  left: 360px;
+  font-size: 2.5rem;
+}
+
+.projets-a-venir-placement {
+  font-size: 2.5rem;
+  right: 460px;
+}
+
 .projet-a-venir h2 {
   /* ajt d'espace en haut et en bas*/
   margin-top: 10%;

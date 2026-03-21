@@ -1,5 +1,6 @@
 import "./css/Project.css";
 import GlareHover from "./GlareHover";
+import GradientText from "./GradientText";
 
 export default function ProjectCard({
   label,
