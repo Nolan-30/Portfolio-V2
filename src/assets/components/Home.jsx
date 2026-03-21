@@ -55,7 +55,7 @@ export default function Home() {
             text={[
               "Étudiant à l'ESIEE-IT Coding Factory. Je construis des expériences web modernes et sécurisées.",
             ]}
-            typingSpeed={10}
+            typingSpeed={40}
             pauseDuration={500}
             showCursor
             cursorCharacter="_"

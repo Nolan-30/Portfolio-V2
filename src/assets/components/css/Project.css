@@ -1,3 +1,26 @@
+.section-page {
+  padding: 6rem 1rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titre-section {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  letter-spacing: -1px;
+  text-decoration: underline;
+}
+
+.grille-projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
 .carte-projet {
   background: var(--fond-carte);
   border: 1px solid var(--couleur-bordure);
@@ -10,33 +33,19 @@
 }
 
 .carte-projet:hover {
-  transition: border-color 500ms ease;
-  cursor: pointer;
+  transform: scale(1.02);
   border-color: var(--couleur-texte);
+}
+
+.carte-projet3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .carte-projet p {
   color: var(--sous-texte);
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
-}
-
-.projets-realises-placement {
-  position: absolute;
-  top: 1000px;
-  left: 360px;
-  font-size: 2.5rem;
-}
-
-.projets-a-venir-placement {
-  font-size: 2.5rem;
-  right: 460px;
-}
-
-.projet-a-venir h2 {
-  /* ajt d'espace en haut et en bas*/
-  margin-top: 10%;
-  margin-bottom: 5%;
 }
 
 .titre-carte {
@@ -49,10 +58,29 @@
   font-weight: 700;
 }
 
+.img-projet img {
+  border-radius: 10px;
+  /* taille fixe pr chaque image d'un projet*/
+  height: 200px;
+  width: 300px;
+  border: 1px solid var(--couleur-bordure);
+}
+
+.img-projet1 img {
+  border-radius: 10px;
+  /* taille fixe pr chaque image d'un projet*/
+}
+
+.projet-a-venir h2 {
+  /* ajt d'espace en haut et en bas*/
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
 .stack-used {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap; /* si y a plus de place ca passe a la ligne automatiquement*/
+  flex-wrap: wrap;
 }
 
 .stack-used span {
@@ -69,6 +97,33 @@
 .stack-used span img {
   height: 24px;
   width: auto;
+}
+
+/*  stack de Penthouse V2*/
+
+.stack-used-penthouse-a-venir {
+  display: flex;
+  gap: 20px;
+}
+
+.stack-used-penthouse-a-venir span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 60px;
+  border-radius: 50%; /* pr faire un cercle parfait */
+
+  border: 1px solid var(--couleur-bordure);
+}
+
+.stack-used-penthouse-a-venir span img {
+  height: 35px;
+  width: auto;
+}
+
+.js img {
+  border-radius: 3px;
 }
 
 .lien-projet {
