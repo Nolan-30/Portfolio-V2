@@ -6,14 +6,12 @@ import ThemeToggle from "./ThemeToggle";
 export default function Header() {
   return (
     <header>
-      <nav className="barre-navigation">
+      <nav className="nav-bar">
         <div className="logo">
-          <img src="a" alt="" />
           <GradientText
             colors={["#570562", "#FF9FFC", "#B19EEF"]}
             animationSpeed={8}
             showBorder={false}
-            className="custom-class"
           >
             Nolan D'almeida.
           </GradientText>

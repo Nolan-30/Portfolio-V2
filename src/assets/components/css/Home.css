@@ -56,9 +56,13 @@ h1 {
     box-shadow 0.2s;
 }
 
+.bouton-bg {
+}
+
 .bouton-principal {
   background-color: var(--couleur-accent);
   color: var(--couleur-fond);
+  background-color: grey;
 }
 
 .bouton-secondaire {

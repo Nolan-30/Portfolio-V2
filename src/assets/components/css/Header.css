@@ -1,21 +1,23 @@
-.barre-navigation {
+.nav-bar {
   position: fixed;
   top: 0;
   width: 100%;
   padding: 1.5rem 5%;
   display: flex;
+
   justify-content: space-between;
-  align-items: center;
   background: rgba(var(--couleur-fond), 0.8);
   /* backdrop-filter: blur(10px); supression du flou pr pouvoir la progression du scroll */
   z-index: 1000;
   border-bottom: 1px solid transparent;
 }
 
+/* Nom */
 .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
   font-weight: 900;
-  font-size: 1.2rem;
-  letter-spacing: -1px;
 }
 
 .point {
@@ -26,15 +28,17 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  letter-spacing: 1px;
 }
 
 .liens-navigation a {
   text-decoration: none;
   color: var(--couleur-texte);
-  font-size: 0.9rem;
-  font-weight: 500;
+
+  font-weight: 700;
   opacity: 0.7;
   transition: opacity 0.3s;
+  font-size: 1.5rem;
 }
 
 .liens-navigation a:hover {

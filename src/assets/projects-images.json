@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nom": "Penthouse",
+    "image": "/images/PTS.png"
+  },
+  {
+    "id": 2,
+    "nom": "Exemple Deux",
+    "image": "/images/exemple-deux.png"
+  },
+  {
+    "id": 3,
+    "nom": "Exemple Trois",
+    "image": "/images/exemple-trois.png"
+  },
+  {
+    "id": 4,
+    "nom": "Exemple Quatre",
+    "image": "/images/exemple-quatre.png"
+  },
+  {
+    "id": 5,
+    "nom": "Exemple Cinq",
+    "image": "/images/exemple-cinq.png"
+  },
+  {
+    "id": 6,
+    "nom": "Exemple Six",
+    "image": "/images/exemple-six.png"
+  }
+]

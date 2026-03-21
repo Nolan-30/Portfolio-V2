@@ -55,14 +55,9 @@ export default function Home() {
             text={[
               "Étudiant à l'ESIEE-IT Coding Factory. Je construis des expériences web modernes et sécurisées.",
             ]}
-            typingSpeed={40}
-            pauseDuration={500}
+            typingSpeed={5}
+            pauseDuration={200}
             showCursor
-            cursorCharacter="_"
-            texts={[
-              "Welcome to React Bits! Good to see you!",
-              "Build some amazing experiences!",
-            ]}
             deletingSpeed={10}
             variableSpeedEnabled={false}
             variableSpeedMin={60}
@@ -82,26 +77,21 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              {/* <StarBorder
+              <StarBorder
                 as="button"
                 className="custom-class"
                 color="magenta"
-                speed="5s"
-              > */}
-              {/* Voir mes projets */}
-              {/* </StarBorder> */}
-              {/* <a href="#projets" className="bouton bouton-secondaire">
-            Voir mes projets
-          </a> */}
-
-              <motion.a
-                href="#contact"
-                className="bouton bouton-principal"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                speed="3s"
               >
-                Voir mes projets
-              </motion.a>
+                <motion.a
+                  href="#contact"
+                  className="bouton bouton-principal"
+                  whileHover={{ scale: 0.25 }}
+                  whileTap={{ scale: 2.95 }}
+                >
+                  <span className="bouton-bg">Voir mes projets</span>
+                </motion.a>
+              </StarBorder>
               <motion.a
                 href="#contact"
                 className="bouton bouton-principal"

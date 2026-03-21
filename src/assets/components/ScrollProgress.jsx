@@ -15,7 +15,7 @@ export function ScrollProgress({ className, ...props }) {
         height: "3px",
         originX: 0,
         zIndex: 50,
-        background: "linear-gradient(to right, #570562, #FF9FFC)",
+        background: "linear-gradient(to right, #8f04a1, #FF9FFC)",
       }}
       {...props}
     />

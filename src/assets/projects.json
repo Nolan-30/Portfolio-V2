@@ -97,5 +97,22 @@
       { "name": "React", "icon": "/images/react.png", "class": "react" },
       { "name": "Tailwind", "icon": "/images/tailwind.png", "class": "tailwind" }
     ]
-  }
+    
+  },
+
+  {
+  "id": 8,
+  "incoming": false,
+  "label": "Projet Personnel",
+  "date": "Fev 2026 - Mars 2026",
+  "title": "Portfolio",
+  "description": "Mon portfolio personnel présentant mes projets, mes compétences et mon parcours de développeur web.",
+  "githubUrl": "https://nolan-30.github.io/Portfolio/",
+  "stack": [
+    { "name": "HTML", "icon": "/images/html.png", "class": "html" },
+    { "name": "CSS", "icon": "/images/css.png", "class": "css" },
+    { "name": "JavaScript", "icon": "/images/JS.png", "class": "js" }
+  ]
+}
+  
 ]
