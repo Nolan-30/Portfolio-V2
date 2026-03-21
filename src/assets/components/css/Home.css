@@ -1,3 +1,13 @@
+/* POSTE */
+
+.texte-degrader {
+  position: absolute;
+  top: -30px;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--couleur-texte);
+  font-size: 4rem;
+}
+
 .banniere-accueil {
   height: 100vh;
   display: flex;
@@ -16,12 +26,6 @@ h1 {
   line-height: 1.1;
   letter-spacing: -2px;
   margin-bottom: 1.5rem;
-}
-
-.texte-degrade {
-  color: transparent;
-  -webkit-text-stroke: 1px var(--couleur-texte);
-  position: relative;
 }
 
 [data-theme="light"] .texte-degrade {
