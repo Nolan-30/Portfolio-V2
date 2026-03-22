@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./css/Footer.css";
 import SplitText from "../../animations/SplitText";
+import { Dock, DockIcon } from "../../animations/Dock";
 
 export default function Footer() {
   const handleAnimationComplete = () => {
@@ -56,9 +57,36 @@ export default function Footer() {
             />
           </a>
         </p>
+        <Dock direction="middle">
+          <DockIcon>
+            <a
+              href="https://github.com/Nolan-30"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/git.png"
+                alt="GitHub"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </a>
+          </DockIcon>
+          <DockIcon>
+            <a
+              href="https://www.linkedin.com/in/nolan-d-almeida"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/linkedin.png"
+                alt="LinkedIn"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </a>
+          </DockIcon>
+        </Dock>
 
         <div className="rs">
-          {/* 3. Petit bonus : effet au survol sur tes liens comme sur ton bouton 'Me contacter' */}
           <motion.a
             href="https://github.com/Nolan-30/Nolan"
             target="_blank"

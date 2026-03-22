@@ -45,6 +45,7 @@ footer {
   font-size: 1.1rem;
   font-weight: 600;
   transition: transform 0.5s;
+  margin-top: -2rem;
 }
 
 .rs a:hover {

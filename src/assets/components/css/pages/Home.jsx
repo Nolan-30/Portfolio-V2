@@ -20,6 +20,7 @@ export default function Home() {
         lightSpread={5.5}
         raysSpeed={0.5}
       />
+
       <div className="contenu-banniere">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -45,6 +46,7 @@ export default function Home() {
 
           {/* <span className="texte-degrade">Full-Stack</span> */}
         </motion.h1>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

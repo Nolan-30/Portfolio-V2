@@ -44,8 +44,7 @@ h1 {
   gap: 1rem;
   justify-content: center;
   width: auto;
-  margin-top: 10%;
-  transition: transform 0.5s ease-out;
+  margin-top: 5%;
 }
 
 .groupe-boutons:hover {

@@ -158,7 +158,14 @@
   transition: width 1s ease-in-out;
 }
 
-/* ajt de l'effet de survol sur "voir le projet" */
+.carte-projet h3 {
+  color: var(--couleur-texte);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* l'effet de survol sur "voir le projet" */
 
 .lien-projet a:hover::after {
   width: 100%; /* Le trait prend tt la largeur du txt */

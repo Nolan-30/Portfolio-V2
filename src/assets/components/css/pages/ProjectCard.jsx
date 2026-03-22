@@ -31,7 +31,7 @@ export default function ProjectCard({
       <BorderGlow
         edgeSensitivity={30}
         glowColor="40 80 80"
-        backgroundColor="#060010"
+        backgroundColor="transparent"
         borderRadius={28}
         glowRadius={40}
         glowIntensity={1}
