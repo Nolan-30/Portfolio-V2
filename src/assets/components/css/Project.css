@@ -21,8 +21,8 @@
 }
 
 .carte-projet {
-  background: var(--fond-carte);
-  border: 1px solid var(--couleur-bordure);
+  /* background: var(--fond-carte);
+  border: 1px solid var(--couleur-bordure); */
   border-radius: 1.5rem;
   padding: 2rem;
   width: 100%;
@@ -79,6 +79,10 @@
   /* ajt d'espace en haut et en bas*/
   margin-top: 10%;
   margin-bottom: 5%;
+}
+
+.projet-item {
+  height: 100%; /* ← ajoute ça */
 }
 
 .stack-used {

@@ -2,6 +2,7 @@ import "./css/Project.css";
 // import GlareHover from "./GlareHover";
 import GradientText from "./GradientText";
 import StarBorder from "./StarBorder";
+import BorderGlow from "./BorderGlow";
 
 export default function ProjectCard({
   label,
@@ -27,30 +28,48 @@ export default function ProjectCard({
         style={{ width: "100%" }}
       > */}
 
-      <article className="carte-projet" style={{ margin: 0, height: "100%" }}>
-        <div className="titre-carte">
-          <span className="etiquette-projet">{label}</span>
-          <span className="date-projet">{date}</span>
-        </div>
+      <BorderGlow
+        edgeSensitivity={30}
+        glowColor="40 80 80"
+        backgroundColor="#060010"
+        borderRadius={28}
+        glowRadius={40}
+        glowIntensity={1}
+        coneSpread={25}
+        animated={false}
+        colors={["#c084fc", "#f472b6", "#38bdf8"]}
+      >
+        <div style={{ padding: "2em" }}>
+          {" "}
+          <article
+            className="carte-projet"
+            style={{ margin: 0, height: "100%" }}
+          >
+            <div className="titre-carte">
+              <span className="etiquette-projet">{label}</span>
+              <span className="date-projet">{date}</span>
+            </div>
 
-        <h3>{title}</h3>
-        <p>{description}</p>
+            <h3>{title}</h3>
+            <p>{description}</p>
 
-        <div className="stack-used">
-          {stack &&
-            stack.map((tech, index) => (
-              <span key={index} className={tech.class}>
-                <img src={tech.icon} alt={tech.name} />
-              </span>
-            ))}
+            <div className="stack-used">
+              {stack &&
+                stack.map((tech, index) => (
+                  <span key={index} className={tech.class}>
+                    <img src={tech.icon} alt={tech.name} />
+                  </span>
+                ))}
+            </div>
+            {/* <div class="img-projet">{image}</div> */}
+            <div className="lien-projet">
+              <a href={githubUrl} target="_blank" rel="noreferrer">
+                Voir le Projet
+              </a>
+            </div>
+          </article>
         </div>
-        {/* <div class="img-projet">{image}</div> */}
-        <div className="lien-projet">
-          <a href={githubUrl} target="_blank" rel="noreferrer">
-            Voir le Projet
-          </a>
-        </div>
-      </article>
+      </BorderGlow>
 
       {/* </GlareHover> */}
     </div>

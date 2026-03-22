@@ -44,6 +44,12 @@ h1 {
   gap: 1rem;
   justify-content: center;
   width: auto;
+  margin-top: 10%;
+  transition: transform 0.5s ease-out;
+}
+
+.groupe-boutons:hover {
+  transform: scale(1.05);
 }
 
 .bouton {
@@ -56,13 +62,13 @@ h1 {
     box-shadow 0.2s;
 }
 
-.bouton-bg {
-}
-
 .bouton-principal {
   background-color: var(--couleur-accent);
-  color: var(--couleur-fond);
-  background-color: grey;
+  color: rgb(255, 255, 255);
+  /* couleur blanc pr que le StarBorder soit mieux visible */
+  background-color: rgb(0, 0, 0);
+  font-weight: 900;
+  font-size: 1.1rem;
 }
 
 .bouton-secondaire {

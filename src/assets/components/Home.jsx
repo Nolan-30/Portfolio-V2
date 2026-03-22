@@ -77,29 +77,27 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <StarBorder
-                as="button"
-                className="custom-class"
-                color="magenta"
-                speed="3s"
-              >
+              <StarBorder as="div" color="magenta" speed="5s">
+                <motion.a
+                  href="#projets"
+                  className="bouton bouton-principal"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Voir mes projets
+                </motion.a>
+              </StarBorder>
+
+              <StarBorder as="div" color="magenta" speed="5s">
                 <motion.a
                   href="#contact"
                   className="bouton bouton-principal"
-                  whileHover={{ scale: 0.25 }}
-                  whileTap={{ scale: 2.95 }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <span className="bouton-bg">Voir mes projets</span>
+                  Me Contacter
                 </motion.a>
               </StarBorder>
-              <motion.a
-                href="#contact"
-                className="bouton bouton-principal"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Me contacter
-              </motion.a>
             </motion.div>
           </div>
         </AnimatedContent>
