@@ -1,8 +1,8 @@
 import "./App.css";
-import Header from "./assets/components/Header";
-import Footer from "./assets/components/Footer";
-import Home from "./assets/components/Home";
-import Project from "./assets/components/Project";
+import Header from "./assets/components/css/pages/Header";
+import Footer from "./assets/components/css/pages/Footer";
+import Home from "./assets/components/css/pages/Home";
+import Project from "./assets/components/css/pages/Project";
 import FadeContent from "./assets/components/animations/FadeContent";
 import { ScrollProgress } from "./assets/components/animations/ScrollProgress";
 

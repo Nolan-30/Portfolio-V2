@@ -1,8 +1,8 @@
 import "./css/Project.css";
 // import GlareHover from "./GlareHover";
-import GradientText from "./animations/GradientText";
-import StarBorder from "./animations/StarBorder";
-import BorderGlow from "./animations/BorderGlow";
+import GradientText from "../../animations/GradientText";
+import StarBorder from "../../animations/StarBorder";
+import BorderGlow from "../../animations/BorderGlow";
 
 export default function ProjectCard({
   label,

@@ -1,7 +1,7 @@
 import "./css/Header.css";
-import "./animations/ThemeToggle";
-import GradientText from "./animations/GradientText";
-import ThemeToggle from "./animations/ThemeToggle";
+import "../../animations/ThemeToggle";
+import GradientText from "../../animations/GradientText";
+import ThemeToggle from "../../animations/ThemeToggle";
 
 export default function Header() {
   return (

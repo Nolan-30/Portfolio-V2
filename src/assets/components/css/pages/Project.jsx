@@ -1,6 +1,6 @@
-import projects from "../projects.json";
+import projects from "../../../projects.json";
 import ProjectCard from "./ProjectCard";
-import GradientText from "./animations/GradientText";
+import GradientText from "../../animations/GradientText";
 
 export default function Project() {
   const projetsRealises = projects.filter((p) => !p.incoming);
