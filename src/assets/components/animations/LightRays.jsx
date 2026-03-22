@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { Renderer, Program, Triangle, Mesh } from "ogl";
-import "./css/LightRays.css";
+import "../css/animations/LightRays.css";
 
 const DEFAULT_COLOR = "#ffffff";
 

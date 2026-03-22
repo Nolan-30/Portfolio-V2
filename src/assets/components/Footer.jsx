@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./css/Footer.css";
-import SplitText from "./SplitText";
+import SplitText from "./animations/SplitText";
 
 export default function Footer() {
   const handleAnimationComplete = () => {

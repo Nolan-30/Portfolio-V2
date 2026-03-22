@@ -3,8 +3,8 @@ import Header from "./assets/components/Header";
 import Footer from "./assets/components/Footer";
 import Home from "./assets/components/Home";
 import Project from "./assets/components/Project";
-import FadeContent from "./assets/components/FadeContent";
-import { ScrollProgress } from "./assets/components/ScrollProgress";
+import FadeContent from "./assets/components/animations/FadeContent";
+import { ScrollProgress } from "./assets/components/animations/ScrollProgress";
 
 function App() {
   return (
