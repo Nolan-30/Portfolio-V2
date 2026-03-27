@@ -1,8 +1,8 @@
 import "./css/Project.css";
-// import GlareHover from "./GlareHover";
-import GradientText from "../../animations/GradientText";
-import StarBorder from "../../animations/StarBorder";
-import BorderGlow from "../../animations/BorderGlow";
+
+import GradientText from "../animations/GradientText";
+import StarBorder from "../animations/StarBorder";
+import BorderGlow from "../animations/BorderGlow";
 
 export default function ProjectCard({
   label,
@@ -14,30 +14,16 @@ export default function ProjectCard({
 }) {
   return (
     <div className="projet-item">
-      {/* <GlareHover
-        width="100%"
-        height="100%"
-        background="transparent"
-        borderRadius="1.5rem"
-        borderColor="transparent"
-        glareColor="#ffffff"
-        glareOpacity={0.15}
-        glareAngle={-30}
-        glareSize={300}
-        transitionDuration={800}
-        style={{ width: "100%" }}
-      > */}
-
       <BorderGlow
         edgeSensitivity={30}
         glowColor="40 80 80"
-        backgroundColor="transparent"
+        backgroundColor="#060010"
         borderRadius={28}
         glowRadius={40}
         glowIntensity={1}
         coneSpread={25}
         animated={false}
-        colors={["#c084fc", "#f472b6", "#38bdf8"]}
+        colors={["#c084fc", "#f472b6", "#ffffff"]}
       >
         <div style={{ padding: "2em" }}>
           {" "}
@@ -70,8 +56,6 @@ export default function ProjectCard({
           </article>
         </div>
       </BorderGlow>
-
-      {/* </GlareHover> */}
     </div>
   );
 }

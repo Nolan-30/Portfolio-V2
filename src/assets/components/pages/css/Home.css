@@ -83,3 +83,12 @@ h1 {
   position: relative;
   z-index: 4; /* pour passer au dessus du LightRays*/
 }
+
+/* RESPONSIVITE */
+
+@media (max-width: 768px) {
+  .contenu-banniere h1 {
+    /* reduction de la taille de la police */
+    font-size: 2rem;
+  }
+}

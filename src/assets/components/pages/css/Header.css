@@ -38,7 +38,7 @@
   font-weight: 700;
   opacity: 0.7;
   transition: opacity 0.3s;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .liens-navigation a:hover {
@@ -64,6 +64,9 @@
 
 @media (max-width: 768px) {
   .logo {
+    font-size: 1rem;
+  }
+  .liens-navigation a {
     font-size: 1rem;
   }
 }

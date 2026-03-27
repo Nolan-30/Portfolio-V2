@@ -78,11 +78,12 @@
     "description": "Site interactif intégrant un système de progression par quiz pour débloquer chaque section de la page.",
     "githubUrl": "",
     "stack": [
-      { "name": "HTML", "icon": "/images/html.png", "class": "html" },
-      { "name": "CSS", "icon": "/images/css.png", "class": "css" },
-      { "name": "JS", "icon": "/images/JS.png", "class": "js" },
-      { "name": "SQL", "icon": "/images/sql.png", "class": "sql" },
-      { "name": "PHP", "icon": "/images/php.png", "class": "php" }
+      { "name": "React", "icon": "/images/react.png", "class": "react" },
+       { "name": "CSS", "icon": "/images/css.png", "class": "css" },
+      { "name": "Nodejs", "icon": "/images/nodejs.png", "class": "nodejs" }
+     
+
+     
     ]
   },
   {
@@ -106,7 +107,7 @@
   "label": "Projet Personnel",
   "date": "Fev 2026 - Mars 2026",
   "title": "Portfolio",
-  "description": "Mon portfolio personnel présentant mes projets, mes compétences et mon parcours de développeur web.",
+  "description": "Développement d'un site présentant mes projets et mes compétences.",
   "githubUrl": "https://nolan-30.github.io/Portfolio/",
   "stack": [
     { "name": "HTML", "icon": "/images/html.png", "class": "html" },

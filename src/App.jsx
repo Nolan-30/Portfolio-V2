@@ -1,8 +1,9 @@
 import "./App.css";
-import Header from "./assets/components/css/pages/Header";
-import Footer from "./assets/components/css/pages/Footer";
-import Home from "./assets/components/css/pages/Home";
-import Project from "./assets/components/css/pages/Project";
+import Header from "./assets/components/pages/Header";
+import Footer from "./assets/components/pages/Footer";
+import Home from "./assets/components/pages/Home";
+import Project from "./assets/components/pages/Project";
+import Stack from "./assets/components/pages/Stack";
 import FadeContent from "./assets/components/animations/FadeContent";
 import { ScrollProgress } from "./assets/components/animations/ScrollProgress";
 
@@ -15,13 +16,12 @@ function App() {
         duration={1000}
         easing="ease-out"
         initialOpacity={0}
-      >
-        {/* Anything placed inside this container will be fade into view */}
-      </FadeContent>
+      ></FadeContent>
       <Header />
 
       <Home />
       <Project />
+      <Stack />
 
       <Footer />
     </>

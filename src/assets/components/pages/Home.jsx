@@ -1,10 +1,10 @@
 import "./css/Home.css";
 import { motion } from "framer-motion";
-import LightRays from "../../animations/LightRays";
-import TextType from "../../animations/TextType";
-import StarBorder from "../../animations/StarBorder";
-import AnimatedContent from "../../animations/AnimatedContent";
-import SplitText from "../../animations/SplitText";
+import LightRays from "../animations/LightRays";
+import TextType from "../animations/TextType";
+import StarBorder from "../animations/StarBorder";
+import AnimatedContent from "../animations/AnimatedContent";
+import SplitText from "../animations/SplitText";
 
 const handleAnimationComplete = () => {
   console.log("All letters have animated!"); // pr s'assurer que les lettres

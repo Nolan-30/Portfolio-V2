@@ -31,11 +31,6 @@
   flex-direction: column;
 }
 
-.carte-projet:hover {
-  transform: scale(1.02);
-  border-color: var(--couleur-texte);
-}
-
 .carte-projet p {
   color: var(--sous-texte);
   font-size: 1rem;
@@ -54,12 +49,15 @@
 
 .titre-carte {
   display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  margin-bottom: 1rem;
+
+  align-items: center; /* Aligne verticalement le texte et la date */
+  gap: 50px; /* FORCE un espace minimum entre les deux textes */
+  font-size: 0.75rem; /* Légèrement plus petit pour que ça tienne mieux */
+  margin-bottom: 1.5rem;
   color: var(--sous-texte);
   text-transform: uppercase;
   font-weight: 700;
+  width: 100%;
 }
 
 .img-projet img {
@@ -83,8 +81,17 @@
 
 .projet-item {
   height: 100%; /* ← ajoute ça */
+  transition: width 1s ease;
 }
 
+.carte-projet {
+  transition: width 1s ease;
+}
+
+.carte-projet:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
 .stack-used {
   display: flex;
   gap: 20px;
@@ -171,6 +178,13 @@
   width: 100%; /* Le trait prend tt la largeur du txt */
 }
 
+.placement-stack {
+  margin-top: -10%;
+}
+.placement-stack p {
+  font-size: 1.5rem;
+}
+
 /* RESPONSIVITE */
 
 @media (max-width: 768px) {
@@ -188,5 +202,15 @@
   }
   .lien-projet {
     font-size: 0.8rem;
+  }
+  /* replacement du txt  */
+  .projets-realises-placement {
+    font-size: 2rem;
+    right: 120px;
+  }
+
+  .projets-a-venir-placement {
+    font-size: 2rem;
+    right: 80px;
   }
 }
