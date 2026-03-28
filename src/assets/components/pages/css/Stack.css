@@ -11,6 +11,7 @@
   border-radius: 10px;
   flex-direction: column;
   gap: 10px;
+  background-color: rgb(35, 35, 35);
 
   padding: 1rem;
 }
@@ -25,4 +26,9 @@
   display: flex;
 
   max-width: 300px;
+}
+
+.html-css {
+  display: flex;
+  gap: 20px;
 }
