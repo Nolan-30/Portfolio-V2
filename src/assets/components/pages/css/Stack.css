@@ -1,34 +1,35 @@
 .languages-container {
   display: flex;
+  flex-wrap: wrap; /* Passer a la ligne si y a plus de place  */
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .language-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
   border: 3px solid white;
   border-radius: 10px;
-  flex-direction: column;
-  gap: 10px;
   background-color: rgb(35, 35, 35);
+  padding: 1.5rem;
 
-  padding: 1rem;
+  width: 320px;
+  min-height: 250px;
 }
 
 .language-card h2 {
-  display: flex;
-  justify-content: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .language-description p {
-  display: flex;
-
-  max-width: 300px;
-}
-
-.html-css {
-  display: flex;
-  gap: 20px;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
 }
