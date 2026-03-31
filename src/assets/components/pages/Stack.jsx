@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import "./css/Stack.css";
 import GradientText from "../animations/GradientText";
 import GlareHover from "../animations/GlareHover";
+import FadeContent from "../animations/FadeContent";
 
 import { section } from "motion/react-client";
 
@@ -37,37 +38,39 @@ export default function Stack() {
 
   return (
     <div className="stack-section">
-      <GradientText
-        colors={["#570562", "#FF9FFC", "#B19EEF"]}
-        animationSpeed={8}
-        showBorder={false}
-      >
-        <h2>Stack</h2>
-      </GradientText>
+      <FadeContent duration={2000} easing="ease-out" initialOpacity={0}>
+        <GradientText
+          colors={["#570562", "#FF9FFC", "#B19EEF"]}
+          animationSpeed={8}
+          showBorder={false}
+        >
+          <h2>Stack</h2>
+        </GradientText>
 
-      <div className="languages-container">
-        {technologies.map((tech, index) => (
-          <GlareHover
-            key={index}
-            width="320px"
-            height="auto"
-            background="#060010"
-            borderRadius="10px"
-            borderColor="var(--couleur-bordure)"
-            glareOpacity={0.2}
-            glareSize={200}
-            className="language-card"
-          >
-            <div className="card-content" style={{ padding: "1.5rem" }}>
-              <span className={tech.className}></span>
-              <h2>{tech.name}</h2>
-              <div className="language-description">
-                <p>{tech.description}</p>
+        <div className="languages-container">
+          {technologies.map((tech, index) => (
+            <GlareHover
+              key={index}
+              width="320px"
+              height="auto"
+              background="#060010"
+              borderRadius="10px"
+              borderColor="var(--couleur-bordure)"
+              glareOpacity={0.2}
+              glareSize={200}
+              className="language-card"
+            >
+              <div className="card-content" style={{ padding: "1.5rem" }}>
+                <span className={tech.className}></span>
+                <h2>{tech.name}</h2>
+                <div className="language-description">
+                  <p>{tech.description}</p>
+                </div>
               </div>
-            </div>
-          </GlareHover>
-        ))}
-      </div>
+            </GlareHover>
+          ))}
+        </div>
+      </FadeContent>
     </div>
   );
 }

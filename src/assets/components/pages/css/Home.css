@@ -1,94 +1,228 @@
-/* POSTE */
-
-.texte-degrader {
-  position: absolute;
-  top: -30px;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--couleur-texte);
-  font-size: 4rem;
-}
-
 .banniere-accueil {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 0 1rem;
+  padding: 0 5%;
   position: relative;
   overflow: hidden;
+  background-color: #000000;
+}
+
+.container-accueil {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  gap: 10%;
+  align-items: center;
+  z-index: 5; /* pr passer au dessus du composant LightRays */
+}
+
+.bloc-image {
+  flex: 0 0 40%; /* l'image prend 40% de la width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.portrait-photo {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 2px solid #222;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.bloc-image::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.contenu-banniere {
+  flex: 1; /* txt prend 60 % de la width */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* PARTIE POSTE  */
+.badge-prefix {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #e88afb;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.point {
+  color: #e88afb;
+}
+
+.badge-prefix .point {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  vertical-align: middle;
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 4.8rem;
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1;
   letter-spacing: -2px;
-  margin-bottom: 1.5rem;
-}
-
-[data-theme="light"] .texte-degrade {
-  -webkit-text-stroke: 1px #000;
+  margin-bottom: 2rem;
+  color: #fff;
 }
 
 .banniere-accueil p {
   max-width: 600px;
-  margin: 0 auto 2.5rem;
+  margin-bottom: 3rem;
   color: var(--sous-texte);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
 }
+
+/* PARTIE BOUTONS */
 
 .groupe-boutons {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
-  width: auto;
-  margin-top: 5%;
-}
-
-.groupe-boutons:hover {
-  transform: scale(1.05);
+  gap: 1.5rem;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 4rem;
 }
 
 .bouton {
-  padding: 0.8rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 900;
+  font-size: 1.1rem;
   transition:
     transform 0.2s,
     box-shadow 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .bouton-principal {
-  background-color: var(--couleur-accent);
-  color: rgb(255, 255, 255);
-  /* couleur blanc pr que le StarBorder soit mieux visible */
-  background-color: rgb(0, 0, 0);
-  font-weight: 900;
-  font-size: 1.1rem;
+  background-color: var(--couleur-accent); /* Ta couleur orange/magenta */
+  color: #fff;
 }
 
 .bouton-secondaire {
-  border: 1px solid var(--couleur-bordure);
-  color: var(--couleur-texte);
+  background-color: transparent;
+  border: 1px solid rgb(16, 15, 15);
+  color: #fff;
 }
 
 .bouton:hover {
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.03);
 }
 
-.contenu-banniere {
-  position: relative;
-  z-index: 4; /* pour passer au dessus du LightRays*/
+/* Les icônes sociales en bas */
+.social-icons {
+  display: flex;
+  gap: 1rem;
 }
 
-/* RESPONSIVITE */
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  color: #888;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.icon-link:hover {
+  background-color: var(--couleur-accent); /* Ta couleur au hover */
+  color: #fff;
+}
+
+.indicateur-defilement {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  z-index: 10;
+}
+
+.indicateur-defilement span {
+  font-size: 2rem;
+}
+
+/* ========================================= */
+/* RESPONSIVITE                              */
+/* ========================================= */
+
+@media (max-width: 1024px) {
+  .banniere-accueil {
+    padding: 0 3%;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+}
 
 @media (max-width: 768px) {
+  .container-bento {
+    flex-direction: column-reverse; /* on met l'image en bas */
+    gap: 2rem;
+    padding-top: 5vh;
+  }
+
+  .bloc-image {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .portrait-photo {
+    max-height: 50vh;
+  }
+
+  .contenu-banniere {
+    align-items: center;
+    text-align: center;
+    flex: 0 0 100%;
+  }
+
   .contenu-banniere h1 {
-    /* reduction de la taille de la police */
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+
+  .titre-principal {
+    text-align: center;
+  }
+
+  .groupe-boutons {
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
