@@ -1,5 +1,6 @@
 .section-page {
   padding: 6rem 1rem;
+  margin-bottom: 10%;
 }
 .container {
   max-width: 1200px;
@@ -50,9 +51,9 @@
 .titre-carte {
   display: flex;
 
-  align-items: center; /* Aligne verticalement le texte et la date */
-  gap: 50px; /* FORCE un espace minimum entre les deux textes */
-  font-size: 0.75rem; /* Légèrement plus petit pour que ça tienne mieux */
+  align-items: center;
+  gap: 60px;
+  font-size: 0.6rem;
   margin-bottom: 1.5rem;
   color: var(--sous-texte);
   text-transform: uppercase;
@@ -68,11 +69,6 @@
   border: 1px solid var(--couleur-bordure);
 }
 
-.img-projet1 img {
-  border-radius: 10px;
-  /* taille fixe pr chaque image d'un projet*/
-}
-
 .projet-a-venir h2 {
   /* ajt d'espace en haut et en bas*/
   margin-top: 10%;
@@ -80,17 +76,12 @@
 }
 
 .projet-item {
-  height: 100%; /* ← ajoute ça */
-  transition: width 1s ease;
-}
-
-.carte-projet {
-  transition: width 1s ease;
+  height: 100%;
 }
 
 .carte-projet:hover {
   cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 .stack-used {
   display: flex;
@@ -105,7 +96,6 @@
   height: 50px;
   width: 60px;
   border-radius: 50%; /* pr faire un cercle parfait */
-
   border: 1px solid var(--couleur-bordure);
 }
 

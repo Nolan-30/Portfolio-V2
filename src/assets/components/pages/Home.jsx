@@ -28,7 +28,7 @@ export default function Home() {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <SplitText
-            text="Développeur Full-Stack "
+            text="Développeur Front-End "
             className="titre-principal"
             tag="h1"
             delay={50}
