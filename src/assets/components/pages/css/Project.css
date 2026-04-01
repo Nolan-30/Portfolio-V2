@@ -22,20 +22,24 @@
 }
 
 .carte-projet {
-  /* background: var(--fond-carte);
-  border: 1px solid var(--couleur-bordure); */
   border-radius: 1.5rem;
   padding: 2rem;
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
 .carte-projet p {
+  max-width: 300px;
   color: var(--sous-texte);
   font-size: 1rem;
   margin-bottom: 1.5rem;
+}
+/* pr que les dates reste droite */
+.date-projet {
+  width: 100%;
 }
 
 .projets-realises-placement {
@@ -50,9 +54,8 @@
 
 .titre-carte {
   display: flex;
-
   align-items: center;
-  gap: 60px;
+  gap: 100px;
   font-size: 0.6rem;
   margin-bottom: 1.5rem;
   color: var(--sous-texte);
@@ -87,48 +90,15 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  width: 100%;
+  font-size: 0.9rem;
+  width: 300px;
 }
 
 .stack-used span {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  width: 60px;
-  border-radius: 50%; /* pr faire un cercle parfait */
-  border: 1px solid var(--couleur-bordure);
-}
-
-.stack-used span img {
-  height: 24px;
-  width: auto;
-}
-
-/*  stack de Penthouse V2*/
-
-.stack-used-penthouse-a-venir {
-  display: flex;
-  gap: 20px;
-}
-
-.stack-used-penthouse-a-venir span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 60px;
-  border-radius: 50%; /* pr faire un cercle parfait */
-
-  border: 1px solid var(--couleur-bordure);
-}
-
-.stack-used-penthouse-a-venir span img {
-  height: 35px;
-  width: auto;
-}
-
-.js img {
-  border-radius: 3px;
 }
 
 .lien-projet {

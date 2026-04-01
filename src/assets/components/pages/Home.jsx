@@ -4,6 +4,7 @@ import LightRays from "../animations/LightRays";
 import TextType from "../animations/TextType";
 import StarBorder from "../animations/StarBorder";
 import SplitText from "../animations/SplitText";
+import { Dock, DockIcon } from "../animations/Dock";
 
 // pr s'assurer que les lettres sont animées
 const handleAnimationComplete = () => {
@@ -88,7 +89,7 @@ export default function Home() {
             />
           </motion.p>
 
-          {/* Le groupe de boutons, aligné à gauche */}
+          {/* grp de btn */}
           <motion.div
             className="groupe-boutons"
             initial={{ opacity: 0, y: 20 }}
@@ -119,7 +120,6 @@ export default function Home() {
             </StarBorder>
           </motion.div>
 
-          {/* === Ajout des Icônes Sociales (comme dans le modèle) === */}
           <motion.div
             className="social-icons"
             initial={{ opacity: 0 }}
@@ -127,10 +127,18 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             <a href="#" className="icon-link">
-              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-facebook-f">
+                <img
+                  src="public/images/react.png"
+                  alt="react"
+                  height={30}
+                  width={25}
+                />
+              </i>
             </a>
+            {/* mettre les techno dans lesquelles je veux exceller */}
             <a href="#" className="icon-link">
-              <i className="fab fa-linkedin-in"></i>
+              <img src="image/react.png" alt="" />
             </a>
             <a href="#" className="icon-link">
               <i className="fab fa-github"></i>
@@ -138,12 +146,91 @@ export default function Home() {
             <a href="#" className="icon-link">
               <i className="fab fa-instagram"></i>
             </a>
+
+            <div className="placement-stack">
+              <Dock direction="middle">
+                <DockIcon>
+                  <a
+                    href="https://github.com/Nolan-30"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="/images/css.png"
+                      alt="GitHub"
+                      style={{ width: "100%", height: "100%" }}
+                    />
+                  </a>
+                </DockIcon>
+                <DockIcon>
+                  <a
+                    href="https://www.linkedin.com/in/nolan-d-almeida"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="/images/JS.png"
+                      alt="LinkedIn"
+                      style={{ width: "100%", height: "100%" }}
+                    />
+                  </a>
+                </DockIcon>
+                <DockIcon>
+                  <a
+                    href="https://github.com/Nolan-30"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="/images/react.png"
+                      alt="GitHub"
+                      style={{ width: "100%", height: "100%" }}
+                    />
+                  </a>
+                </DockIcon>
+                <DockIcon>
+                  <a
+                    href="https://github.com/Nolan-30"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="/images/html.png"
+                      alt="GitHub"
+                      style={{ width: "100%", height: "100%" }}
+                    />
+                  </a>
+                </DockIcon>
+                <DockIcon>
+                  <a
+                    href="https://github.com/Nolan-30"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="/images/sql.png"
+                      alt="GitHub"
+                      style={{ width: "100%", height: "100%" }}
+                    />
+                  </a>
+                </DockIcon>
+                <DockIcon>
+                  <a
+                    href="https://github.com/Nolan-30"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="/images/nodejs.png"
+                      alt="GitHub"
+                      style={{ width: "100%", height: "100%" }}
+                    />
+                  </a>
+                </DockIcon>
+              </Dock>
+            </div>
           </motion.div>
         </div>
-      </div>
-
-      <div className="indicateur-defilement">
-        <span className="rebond">↓</span>
       </div>
     </main>
   );

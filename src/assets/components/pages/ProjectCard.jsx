@@ -45,7 +45,7 @@ export default function ProjectCard({
                 {stack &&
                   stack.map((tech, index) => (
                     <span key={index} className={tech.class}>
-                      <img src={tech.icon} alt={tech.name} />
+                      {tech.name}
                     </span>
                   ))}
               </div>
