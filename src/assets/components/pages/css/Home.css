@@ -135,10 +135,18 @@ h1 {
   transform: translateY(-3px) scale(1.03);
 }
 
-/* Les icônes sociales en bas */
+/* box icon*/
 .social-icons {
   display: flex;
   gap: 1rem;
+}
+
+.social-icons img {
+  /* margin-top: 20%; */
+  display: flex;
+
+  height: auto;
+  width: 25px;
 }
 
 .icon-link {
@@ -160,6 +168,11 @@ h1 {
 .icon-link:hover {
   background-color: var(--couleur-accent); /* Ta couleur au hover */
   color: #fff;
+}
+
+.placement-stack {
+  right: 100px;
+  top: 500px;
 }
 
 /* ========================================= */
@@ -208,7 +221,7 @@ h1 {
   }
 
   .contenu-banniere h1 {
-    font-size: 2.2rem;  re
+    font-size: 2.2rem;
   }
 
   .titre-principal {

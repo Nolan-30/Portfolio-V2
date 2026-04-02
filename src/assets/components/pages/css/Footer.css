@@ -64,3 +64,11 @@ footer {
 .placement-stack p {
   font-size: 1.5rem;
 }
+
+/* RESPONSIVITE */
+
+@media (max-width: 768px) {
+  footer h2 {
+    font-size: 1rem;
+  }
+}

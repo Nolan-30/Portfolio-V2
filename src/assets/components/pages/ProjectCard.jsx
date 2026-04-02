@@ -38,7 +38,9 @@ export default function ProjectCard({
                 <span className="date-projet">{date}</span>
               </div>
 
-              <h3>{title}</h3>
+              <span className="degrader-violet">
+                <h3>{title}</h3>
+              </span>
               <p>{description}</p>
 
               <div className="stack-used">

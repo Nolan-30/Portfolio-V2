@@ -2,6 +2,7 @@ import projects from "../../projects.json";
 import ProjectCard from "./ProjectCard";
 import GradientText from "../animations/GradientText";
 import { Dock, DockIcon } from "../animations/Dock";
+import Particles from "../animations/Particles";
 
 export default function Project() {
   const projetsRealises = projects.filter((p) => !p.incoming);
@@ -9,6 +10,19 @@ export default function Project() {
 
   return (
     <section id="projets" className="section-page">
+      {/* <div style={{ width: "100%", height: "600px", position: "relative" }}>
+        <Particles
+          particleColors={["#ffffff"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover
+          alphaParticles={false}
+          disableRotation={false}
+          pixelRatio={1}
+        /> */}
+
       <div className="container">
         <h2 className="titre-section">
           {" "}
@@ -49,6 +63,7 @@ export default function Project() {
           ))}
         </div>
       </div>
+      {/* </div> */}
     </section>
   );
 }

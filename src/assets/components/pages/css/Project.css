@@ -1,3 +1,6 @@
+/* import de police */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+
 .section-page {
   padding: 6rem 1rem;
   margin-bottom: 10%;
@@ -64,6 +67,10 @@
   width: 100%;
 }
 
+.titre-carte h3 {
+  color: pink;
+}
+
 .img-projet img {
   border-radius: 10px;
   /* taille fixe pr chaque image d'un projet*/
@@ -88,11 +95,13 @@
 }
 .stack-used {
   display: flex;
+  flex-wrap: wrap; /* va a la ligne si y a plus de place */
   gap: 20px;
-  flex-wrap: wrap;
-  width: 100%;
+
   font-size: 0.9rem;
   width: 300px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 
 .stack-used span {
@@ -103,7 +112,6 @@
 
 .lien-projet {
   margin-top: 5%;
-  margin-left: 2%;
 }
 
 .lien-projet a {
@@ -124,11 +132,16 @@
   background-color: var(--couleur-texte);
   transition: width 1s ease-in-out;
 }
-
+.degrader-violet {
+  background: linear-gradient(to right, rgb(213, 71, 252), #9000a9);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .carte-projet h3 {
   color: var(--couleur-texte);
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 0.5rem;
 }
 

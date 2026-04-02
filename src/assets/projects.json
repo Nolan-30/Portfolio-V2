@@ -22,7 +22,7 @@
     "label": "Projet Scolaire",
     "date": "Oct 2025 - Oct 2025",
     "title": "Bataille Navale",
-    "description": "Jeu de bataille navale contre une IA. Une simulation stratégique en Python à l'architecture modulaire et épurée.",
+    "description": "Jeu de bataille navale contre une Intelligence Artificielle. Une simulation stratégique à l'architecture modulaire et épurée.",
     "githubUrl": "https://github.com/Nolan-30/Bataille-Navale",
     "stack": [
       { "name": "Python", "icon": "/images/python.png", "class": "python" }
@@ -49,10 +49,10 @@
     "label": "Projet Scolaire",
     "date": "Jan 2026 - Jan 2026",
     "title": "Gladiator Arena",
-    "description": "Affrontez un panel d'ennemis variés avec système de classes, gestion d'inventaire et combats au tour par tour.",
+    "description": "Affrontez un panel d'ennemis variés avec système de classes, gestion d'inventaire et combats.",
     "githubUrl": "https://github.com/Nolan-30/Gladiator-Arena",
     "stack": [
-      { "name": "Java", "icon": "/images/java-removebg-preview (2).png", "class": "java" }
+      { "name": "Java", "icon": "/images/java.png", "class": "java" }
     ]
   },
   {
@@ -61,7 +61,7 @@
     "label": "Projet Scolaire",
     "date": "Fev 2026 - Fev 2026",
     "title": "Escape",
-    "description": "Survivez à une pluie d'objets en esquivant les bombes et en collectant des bonus stratégiques.",
+    "description": "Survivez à une pluie d'objets en esquivant les bombes et en collectant des bonus.",
     "image": "/images/Escape.png",
     "githubUrl": "https://mega.nz/fm/fsh1WSyR",
     "stack": [

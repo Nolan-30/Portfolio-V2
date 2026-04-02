@@ -4,6 +4,7 @@ import LightRays from "../animations/LightRays";
 import TextType from "../animations/TextType";
 import StarBorder from "../animations/StarBorder";
 import SplitText from "../animations/SplitText";
+
 import { Dock, DockIcon } from "../animations/Dock";
 
 // pr s'assurer que les lettres sont animées
@@ -136,18 +137,18 @@ export default function Home() {
                 />
               </i>
             </a>
-            {/* mettre les techno dans lesquelles je veux exceller */}
-            <a href="#" className="icon-link">
-              <img src="image/react.png" alt="" />
-            </a>
-            <a href="#" className="icon-link">
-              <i className="fab fa-github"></i>
-            </a>
-            <a href="#" className="icon-link">
-              <i className="fab fa-instagram"></i>
-            </a>
 
-            <div className="placement-stack">
+            {/* test des techno dans lesquelles je veux exceller  */}
+
+            <a href="#" className="icon-link">
+              <img
+                src="public/images/tailwind.png"
+                alt="react"
+                height={30}
+                width={25}
+              />
+            </a>
+            {/* <div className="placement-stack">
               <Dock direction="middle">
                 <DockIcon>
                   <a
@@ -228,10 +229,11 @@ export default function Home() {
                   </a>
                 </DockIcon>
               </Dock>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
+      {/* </div> */}
     </main>
   );
 }
