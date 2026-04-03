@@ -46,13 +46,9 @@
 }
 
 .projets-realises-placement {
+  font-weight: 900;
   font-size: 3rem;
   right: 460px;
-}
-
-.projets-a-venir-placement {
-  font-size: 3rem;
-  right: 400px;
 }
 
 .titre-carte {
@@ -63,12 +59,8 @@
   margin-bottom: 1.5rem;
   color: var(--sous-texte);
   text-transform: uppercase;
-  font-weight: 700;
+  /* mettre une police */
   width: 100%;
-}
-
-.titre-carte h3 {
-  color: pink;
 }
 
 .img-projet img {

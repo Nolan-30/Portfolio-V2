@@ -13,7 +13,7 @@ export default function Header() {
             animationSpeed={8}
             showBorder={false}
           >
-            Nolan D'almeida.
+            Nolan.{/* Nolan D'almeida. */}
           </GradientText>
         </div>
 

@@ -58,7 +58,7 @@ export default function Home() {
           >
             {/* J'ai gardé ton texte et ton animation SplitText */}
             <SplitText
-              text="Nolan D'almeida"
+              text="Nolan"
               className="titre-principal"
               tag="h1"
               delay={100}
