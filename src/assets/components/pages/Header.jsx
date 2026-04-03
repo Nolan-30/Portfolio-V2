@@ -20,6 +20,7 @@ export default function Header() {
         <div className="liens-navigation">
           <a href="#projets">Projets</a>
           <a href="#contact">Contact</a>
+          <a href="#stack">Stack</a>
           <ThemeToggle />
         </div>
       </nav>

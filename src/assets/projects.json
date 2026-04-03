@@ -22,7 +22,7 @@
     "label": "Projet Scolaire",
     "date": "Oct 2025 - Oct 2025",
     "title": "Bataille Navale",
-    "description": "Jeu de bataille navale contre une Intelligence Artificielle. Une simulation stratégique à l'architecture modulaire et épurée.",
+    "description": "Simulation stratégique de combat naval face à une IA, développée avec une architecture modulaire.",
     "githubUrl": "https://github.com/Nolan-30/Bataille-Navale",
     "stack": [
       { "name": "Python", "icon": "/images/python.png", "class": "python" }
@@ -69,11 +69,25 @@
       { "name": "C#", "icon": "/images/C-Sharp.png", "class": "csharp" }
     ]
   },
+    {
+  "id": 6,
+  "incoming": false,
+  "label": "Projet Personnel",
+  "date": "Fev 2026 - Mars 2026",
+  "title": "Portfolio",
+  "description": "Développement d'un site présentant mes projets et mes compétences.",
+  "githubUrl": "https://nolan-30.github.io/Portfolio/",
+  "stack": [
+    { "name": "HTML", "icon": "/images/html.png", "class": "html" },
+    { "name": "CSS", "icon": "/images/css.png", "class": "css" },
+    { "name": "JavaScript", "icon": "/images/JS.png", "class": "js" }
+  ]
+},
   {
-    "id": 6,
-    "incoming": true,
+    "id": 7,
+    "incoming": false,
     "label": "Projet Scolaire",
-    "date": "Oct 2025 - Mai 2026",
+    "date": "À venir",
     "title": "SNK Wiki",
     "description": "Site interactif intégrant un système de progression par quiz pour débloquer chaque section de la page.",
     "githubUrl": "",
@@ -87,8 +101,8 @@
     ]
   },
   {
-    "id": 7,
-    "incoming": true,
+    "id": 8,
+    "incoming": false,
     "label": "Projet Personnel",
     "date": "À venir",
     "title": "Penthouse V2",
@@ -99,21 +113,8 @@
       { "name": "Tailwind", "icon": "/images/tailwind.png", "class": "tailwind" }
     ]
     
-  },
+  }
 
-  {
-  "id": 8,
-  "incoming": false,
-  "label": "Projet Personnel",
-  "date": "Fev 2026 - Mars 2026",
-  "title": "Portfolio",
-  "description": "Développement d'un site présentant mes projets et mes compétences.",
-  "githubUrl": "https://nolan-30.github.io/Portfolio/",
-  "stack": [
-    { "name": "HTML", "icon": "/images/html.png", "class": "html" },
-    { "name": "CSS", "icon": "/images/css.png", "class": "css" },
-    { "name": "JavaScript", "icon": "/images/JS.png", "class": "js" }
-  ]
-}
+
   
 ]
