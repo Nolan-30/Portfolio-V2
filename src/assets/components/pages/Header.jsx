@@ -2,6 +2,7 @@ import "./css/Header.css";
 import "../animations/ThemeToggle";
 import GradientText from "../animations/GradientText";
 import ThemeToggle from "../animations/ThemeToggle";
+import GooeyNav from "../animations/GooeyNav";
 
 export default function Header() {
   return (
@@ -13,14 +14,16 @@ export default function Header() {
             animationSpeed={8}
             showBorder={false}
           >
-            Nolan.{/* Nolan D'almeida. */}
+            Nolan D'almeida.
           </GradientText>
         </div>
 
         <div className="liens-navigation">
+          <a href="#accueil">Accueil</a>
           <a href="#projets">Projets</a>
-          <a href="#contact">Contact</a>
           <a href="#stack">Stack</a>
+          <a href="#contact">Contact</a>
+
           <ThemeToggle />
         </div>
       </nav>

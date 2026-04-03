@@ -14,7 +14,7 @@ const handleAnimationComplete = () => {
 
 export default function Home() {
   return (
-    <main className="banniere-accueil">
+    <main id="accueil" className="banniere-accueil">
       <LightRays
         raysOrigin="top-center"
         raysColor="#ffffff"
@@ -41,7 +41,7 @@ export default function Home() {
         {/* colonne de droite*/}
         <div className="contenu-banniere">
           <motion.div
-            className="badge-prefix"
+            className="badge"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -58,7 +58,7 @@ export default function Home() {
           >
             {/* J'ai gardé ton texte et ton animation SplitText */}
             <SplitText
-              text="Nolan"
+              text="Nolan D'almeida"
               className="titre-principal"
               tag="h1"
               delay={100}

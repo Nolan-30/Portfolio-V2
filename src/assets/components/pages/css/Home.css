@@ -6,7 +6,7 @@
   padding: 0 5%;
   position: relative;
   overflow: hidden;
-  background-color: #272727;
+  background-color: #000000;
 }
 
 .container-accueil {
@@ -16,6 +16,7 @@
   gap: 10%;
   align-items: center;
   z-index: 5; /* pr passer au dessus du composant LightRays */
+  margin-top: -20%;
 }
 
 .bloc-image {
@@ -29,11 +30,7 @@
 .portrait-photo {
   width: 100%;
   height: auto;
-  max-height: 80vh;
-  object-fit: cover;
   border-radius: 30px;
-  border: 2px solid #222;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .bloc-image::after {
@@ -56,7 +53,8 @@
 }
 
 /* PARTIE POSTE  */
-.badge-prefix {
+.badge {
+  display: inline-flex;
   background-color: rgba(0, 0, 0, 0.15);
   color: #e88afb;
   padding: 0.5rem 1.2rem;
@@ -73,10 +71,11 @@
   color: #e88afb;
 }
 
-.badge-prefix .point {
+.badge .point {
   margin-right: 8px;
   font-size: 1.2rem;
-  vertical-align: middle;
+  line-height: 1;
+  display: inline-block; /* Ajoute ceci */
 }
 
 h1 {
@@ -156,7 +155,9 @@ h1 {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
+  border: 1px solid rgb(16, 15, 15);
+
   color: #888;
   text-decoration: none;
   font-size: 1.2rem;

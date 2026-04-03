@@ -5,6 +5,7 @@ import {
   useAnimationFrame,
   useTransform,
 } from "motion/react";
+
 import "../css/animations/GradientText.css";
 
 export default function GradientText({

@@ -41,7 +41,7 @@ export default function Footer() {
         <p className="mail">
           <a href="mailto:nolan.dalmeida07@gmail.com">
             <SplitText
-              text="###"
+              text="nolan.dalmeida07@gmail.com"
               className="collaboration"
               delay={50}
               duration={2.5}
@@ -69,7 +69,7 @@ export default function Footer() {
             Github
           </motion.a>
           <motion.a
-            // href="https://www.linkedin.com/in/nolan-d-almeida-153112375/"
+            href="https://www.linkedin.com/in/nolan-d-almeida-153112375/"
             target="_blank"
             rel="noreferrer"
             whileHover={{ scale: 1.1 }}
@@ -79,8 +79,7 @@ export default function Footer() {
           </motion.a>
         </div>
 
-        <p className="droits-auteur">© 2026 Nolan.</p>
-        {/*  */}
+        <p className="droits-auteur">© 2026 Nolan D'almeida.</p>
       </motion.div>
     </footer>
   );

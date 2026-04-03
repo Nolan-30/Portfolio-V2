@@ -37,7 +37,7 @@ export default function Stack() {
   ];
 
   return (
-    <div className="stack-section">
+    <section id="stack" className="stack-section">
       <FadeContent duration={2000} easing="ease-out" initialOpacity={0}>
         <GradientText
           colors={["#570562", "#FF9FFC", "#B19EEF"]}
@@ -71,6 +71,6 @@ export default function Stack() {
           ))}
         </div>
       </FadeContent>
-    </div>
+    </section>
   );
 }
