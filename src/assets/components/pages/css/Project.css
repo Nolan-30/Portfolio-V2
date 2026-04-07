@@ -64,8 +64,10 @@
 }
 
 .icons {
-  margin-bottom: 1.5rem;
   display: flex;
+
+  margin-bottom: 15%;
+  justify-content: center;
 }
 
 .img-projet img {

@@ -7,6 +7,7 @@
     "label": "Projet Scolaire",
     "date": "Sep 2025 - Dec 2025",
     "title": "Power Of Memory",
+    "iconName": "brain",
     "description": "Conception en équipe d'une plateforme alliant profils personnalisés et classements dynamiques.",
     "image": "/images/power-of-memory-interface.png",
     "githubUrl": "https://github.com/Nolan-30/Power-of-Memory",

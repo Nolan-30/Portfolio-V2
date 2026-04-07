@@ -4,7 +4,10 @@ import GradientText from "../animations/GradientText";
 import StarBorder from "../animations/StarBorder";
 import BorderGlow from "../animations/BorderGlow";
 import FadeContent from "../animations/FadeContent";
+
+// import Icon
 import NavalBattle from "../icons/NavalBattle";
+import Brain from "../icons/Brain";
 
 export default function ProjectCard({
   label,
@@ -34,16 +37,22 @@ export default function ProjectCard({
               className="carte-projet"
               style={{ margin: 0, height: "100%" }}
             >
-              <div className="titre-carte">
-                <span className="etiquette-projet">{label}</span>
-                <span className="date-projet">{date}</span>
-              </div>
-
+              {/* ICON */}
               {iconName === "boat" && (
                 <div className="icons">
                   <NavalBattle size={80} color="#dd00ff" />
                 </div>
               )}
+
+              {iconName === "brain" && (
+                <div className="icons">
+                  <Brain size={80} color="#dd00ff" />
+                </div>
+              )}
+              <div className="titre-carte">
+                <span className="etiquette-projet">{label}</span>
+                <span className="date-projet">{date}</span>
+              </div>
 
               <span className="degrader-violet">
                 <h3>{title}</h3>
