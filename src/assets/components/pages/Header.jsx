@@ -18,7 +18,7 @@ export default function Header() {
           </GradientText>
         </div>
 
-        <div className="liens-navigation">
+        <div className="nav-links">
           <a href="#accueil">Accueil</a>
           <a href="#projets">Projets</a>
           <a href="#stack">Stack</a>

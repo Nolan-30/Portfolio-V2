@@ -63,18 +63,17 @@
   width: 100%;
 }
 
+.icons {
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
 .img-projet img {
   border-radius: 10px;
   /* taille fixe pr chaque image d'un projet*/
   height: 200px;
   width: 300px;
   border: 1px solid var(--couleur-bordure);
-}
-
-.projet-a-venir h2 {
-  /* ajt d'espace en haut et en bas*/
-  margin-top: 10%;
-  margin-bottom: 5%;
 }
 
 .projet-item {

@@ -24,14 +24,14 @@
   color: white;
 }
 
-.liens-navigation {
+.nav-links {
   display: flex;
   align-items: center;
   gap: 2rem;
   letter-spacing: 1px;
 }
 
-.liens-navigation a {
+.nav-links a {
   text-decoration: none;
   color: var(--couleur-texte);
 
@@ -41,7 +41,7 @@
   font-size: 1.2rem;
 }
 
-.liens-navigation a:hover {
+.nav-links a:hover {
   opacity: 1;
 }
 
@@ -66,7 +66,11 @@
   .logo {
     font-size: 1rem;
   }
-  .liens-navigation a {
-    font-size: 1rem;
+  .nav-links {
+    /* reduction du gap */
+    gap: 1rem;
+  }
+  .nav-links a {
+    font-size: 0.7rem;
   }
 }

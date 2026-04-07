@@ -5,7 +5,6 @@ import Particles from "../animations/Particles";
 
 export default function Project() {
   const projetsRealises = projects.filter((p) => !p.incoming);
-  const projetsAVenir = projects.filter((p) => p.incoming);
 
   return (
     <section

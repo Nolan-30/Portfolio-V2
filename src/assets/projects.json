@@ -1,3 +1,5 @@
+
+
 [
   {
     "id": 1,
@@ -22,6 +24,7 @@
     "label": "Projet Scolaire",
     "date": "Oct 2025 - Oct 2025",
     "title": "Bataille Navale",
+    "iconName" : "boat",
     "description": "Simulation stratégique de combat naval face à une IA, développée avec une architecture modulaire.",
     "githubUrl": "https://github.com/Nolan-30/Bataille-Navale",
     "stack": [

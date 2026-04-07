@@ -56,7 +56,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            {/* J'ai gardé ton texte et ton animation SplitText */}
+            {/* animat° spilt text*/}
             <SplitText
               text="Nolan D'almeida"
               className="titre-principal"
@@ -97,7 +97,6 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            {/* J'ai gardé tes StarBorder et tes boutons */}
             <StarBorder as="div" color="magenta" speed="5s">
               <motion.a
                 href="#projets"
@@ -143,7 +142,15 @@ export default function Home() {
             <a href="#" className="icon-link">
               <img
                 src="public/images/tailwind.png"
-                alt="react"
+                alt="Tailwind"
+                height={30}
+                width={25}
+              />
+            </a>
+            <a href="#" className="icon-link">
+              <img
+                src="public/images/nodejs.png"
+                alt="Node.js"
                 height={30}
                 width={25}
               />

@@ -1,14 +1,16 @@
+import { useRef } from "react";
 import "./css/Project.css";
-
 import GradientText from "../animations/GradientText";
 import StarBorder from "../animations/StarBorder";
 import BorderGlow from "../animations/BorderGlow";
 import FadeContent from "../animations/FadeContent";
+import NavalBattle from "../icons/NavalBattle";
 
 export default function ProjectCard({
   label,
   date,
   title,
+  iconName,
   description,
   githubUrl,
   stack,
@@ -28,7 +30,6 @@ export default function ProjectCard({
           colors={["#c084fc", "#f472b6", "#ffffff"]}
         >
           <div style={{ padding: "2em" }}>
-            {" "}
             <article
               className="carte-projet"
               style={{ margin: 0, height: "100%" }}
@@ -38,9 +39,16 @@ export default function ProjectCard({
                 <span className="date-projet">{date}</span>
               </div>
 
+              {iconName === "boat" && (
+                <div className="icons">
+                  <NavalBattle size={80} color="#dd00ff" />
+                </div>
+              )}
+
               <span className="degrader-violet">
                 <h3>{title}</h3>
               </span>
+
               <p>{description}</p>
 
               <div className="stack-used">
@@ -51,7 +59,7 @@ export default function ProjectCard({
                     </span>
                   ))}
               </div>
-              {/* <div class="img-projet">{image}</div> */}
+
               <div className="lien-projet">
                 <a href={githubUrl} target="_blank" rel="noreferrer">
                   Voir le Projet
