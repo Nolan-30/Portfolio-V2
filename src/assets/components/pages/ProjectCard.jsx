@@ -14,11 +14,13 @@ import Code from "../icons/Code";
 import Heart from "../icons/Heart";
 import Question from "../icons/Question";
 import Sparkles from "../icons/Sparkles";
+import Link from "../icons/Link";
 
 export default function ProjectCard({
   label,
   date,
   title,
+  iconLink,
   iconName,
   description,
   githubUrl,
@@ -106,9 +108,11 @@ export default function ProjectCard({
               </div>
 
               <div className="lien-projet">
-                <a href={githubUrl} target="_blank" rel="noreferrer">
+                <Link size={40} color="#7a7a7a" />
+
+                {/* <a href={githubUrl} target="_blank" rel="noreferrer">
                   Voir le Projet
-                </a>
+                </a> */}
               </div>
             </article>
           </div>

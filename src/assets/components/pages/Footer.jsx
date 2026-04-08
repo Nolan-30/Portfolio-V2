@@ -4,6 +4,9 @@ import "./css/Footer.css";
 import SplitText from "../animations/SplitText";
 import { Dock, DockIcon } from "../animations/Dock";
 
+import LinkedIn from "../icons/LinkedIn";
+import Github from "../icons/Github";
+
 export default function Footer() {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
@@ -58,7 +61,7 @@ export default function Footer() {
           </a>
         </p>
 
-        <div className="rs">
+        {/* <div className="rs">
           <motion.a
             href="https://github.com/Nolan-30/Nolan"
             target="_blank"
@@ -77,6 +80,17 @@ export default function Footer() {
           >
             LinkedIn
           </motion.a>
+        </div> */}
+        <div className="rs">
+          <a href="https://github.com/Nolan-30/Nolan" target="_blank">
+            <Github size={80} color="#ffffff" />{" "}
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nolan-d-almeida-153112375/"
+            target="_blank"
+          >
+            <LinkedIn size={80} color="#ffffff" />
+          </a>
         </div>
 
         <p className="droits-auteur">© 2026 Nolan D'almeida.</p>

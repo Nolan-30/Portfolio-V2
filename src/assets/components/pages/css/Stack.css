@@ -34,6 +34,7 @@
   text-align: center;
   margin: 0;
   line-height: 1.5;
+  color: var(--sous-texte);
 }
 
 @media (max-width: 768px) {
