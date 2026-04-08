@@ -82,6 +82,8 @@
   "label": "Projet Personnel",
   "date": "Fev 2026 - Mars 2026",
   "title": "Portfolio",
+  "iconLink":"link",
+
   "iconName":"code",
   "description": "Développement d'un site présentant mes projets et mes compétences.",
   "githubUrl": "https://nolan-30.github.io/Portfolio/",
@@ -116,6 +118,7 @@
     "date": "À venir",
     "title": "Penthouse V2",
     "iconName" :"sparkles",
+
     "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
     "githubUrl": "",
     "stack": [
