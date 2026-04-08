@@ -38,6 +38,7 @@
     "label": "Projet Personnel",
     "date": "Oct 2025 - Jan 2026",
     "title": "Penthouse",
+    "iconName" :"eye",
     "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
     "image": "/images/PTS.jpg",
     "githubUrl": "https://nolan-30.github.io/Penthouse/",
@@ -53,6 +54,7 @@
     "label": "Projet Scolaire",
     "date": "Jan 2026 - Jan 2026",
     "title": "Gladiator Arena",
+    "iconName" : "skull",
     "description": "Affrontez un panel d'ennemis variés avec système de classes, gestion d'inventaire et combats.",
     "githubUrl": "https://github.com/Nolan-30/Gladiator-Arena",
     "stack": [
@@ -65,6 +67,7 @@
     "label": "Projet Scolaire",
     "date": "Fev 2026 - Fev 2026",
     "title": "Escape",
+    "iconName" : "heart",
     "description": "Survivez à une pluie d'objets en esquivant les bombes et en collectant des bonus.",
     "image": "/images/Escape.png",
     "githubUrl": "https://mega.nz/fm/fsh1WSyR",
@@ -79,6 +82,7 @@
   "label": "Projet Personnel",
   "date": "Fev 2026 - Mars 2026",
   "title": "Portfolio",
+  "iconName":"code",
   "description": "Développement d'un site présentant mes projets et mes compétences.",
   "githubUrl": "https://nolan-30.github.io/Portfolio/",
   "stack": [
@@ -93,6 +97,7 @@
     "label": "Projet Scolaire",
     "date": "À venir",
     "title": "SNK Wiki",
+    "iconName" : "question",
     "description": "Site interactif intégrant un système de progression par quiz pour débloquer chaque section de la page.",
     "githubUrl": "",
     "stack": [
@@ -110,6 +115,7 @@
     "label": "Projet Personnel",
     "date": "À venir",
     "title": "Penthouse V2",
+    "iconName" :"sparkles",
     "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
     "githubUrl": "",
     "stack": [

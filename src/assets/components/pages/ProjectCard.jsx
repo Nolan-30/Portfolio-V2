@@ -8,6 +8,12 @@ import FadeContent from "../animations/FadeContent";
 // import Icon
 import NavalBattle from "../icons/NavalBattle";
 import Brain from "../icons/Brain";
+import Eye from "../icons/Eye";
+import Skull from "../icons/Skull";
+import Code from "../icons/Code";
+import Heart from "../icons/Heart";
+import Question from "../icons/Question";
+import Sparkles from "../icons/Sparkles";
 
 export default function ProjectCard({
   label,
@@ -37,7 +43,7 @@ export default function ProjectCard({
               className="carte-projet"
               style={{ margin: 0, height: "100%" }}
             >
-              {/* ICON */}
+              {/* ICON DE PROJET */}
               {iconName === "boat" && (
                 <div className="icons">
                   <NavalBattle size={80} color="#dd00ff" />
@@ -47,6 +53,36 @@ export default function ProjectCard({
               {iconName === "brain" && (
                 <div className="icons">
                   <Brain size={80} color="#dd00ff" />
+                </div>
+              )}
+              {iconName === "eye" && (
+                <div className="icons">
+                  <Eye size={80} color="#dd00ff" />
+                </div>
+              )}
+              {iconName === "skull" && (
+                <div className="icons">
+                  <Skull size={80} color="#dd00ff" />
+                </div>
+              )}
+              {iconName === "heart" && (
+                <div className="icons">
+                  <Heart size={80} color="#dd00ff" />
+                </div>
+              )}
+              {iconName === "code" && (
+                <div className="icons">
+                  <Code size={80} color="#dd00ff" />
+                </div>
+              )}
+              {iconName === "question" && (
+                <div className="icons">
+                  <Question size={80} color="#dd00ff" />
+                </div>
+              )}
+              {iconName === "sparkles" && (
+                <div className="icons">
+                  <Sparkles size={80} color="#dd00ff" />
                 </div>
               )}
               <div className="titre-carte">

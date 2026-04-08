@@ -82,7 +82,7 @@ export default function Home() {
               text={[
                 "Je construis des expériences web modernes et sécurisées.",
               ]}
-              typingSpeed={5}
+              typingSpeed={10}
               pauseDuration={200}
               showCursor
               deletingSpeed={10}
@@ -150,6 +150,14 @@ export default function Home() {
             <a href="#" className="icon-link">
               <img
                 src="public/images/nodejs.png"
+                alt="Node.js"
+                height={30}
+                width={25}
+              />
+            </a>
+            <a href="#" className="icon-link">
+              <img
+                src="public/images/mongoDB.jpg"
                 alt="Node.js"
                 height={30}
                 width={25}
