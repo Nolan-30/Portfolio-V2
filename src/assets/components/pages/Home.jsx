@@ -32,7 +32,7 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <img
-            src="public/images/doffy.jpg"
+            src="images/doffy.jpg"
             alt="Doffy portrait"
             className="portrait-photo"
           />
@@ -129,7 +129,7 @@ export default function Home() {
             <a href="#" className="icon-link">
               <i className="fab fa-facebook-f">
                 <img
-                  src="public/images/react.png"
+                  src="images/react.png"
                   alt="react"
                   height={30}
                   width={25}
@@ -141,7 +141,7 @@ export default function Home() {
 
             <a href="#" className="icon-link">
               <img
-                src="public/images/tailwind.png"
+                src="images/tailwind.png"
                 alt="Tailwind"
                 height={30}
                 width={25}
@@ -149,7 +149,7 @@ export default function Home() {
             </a>
             <a href="#" className="icon-link">
               <img
-                src="public/images/nodejs.png"
+                src="images/nodejs.png"
                 alt="Node.js"
                 height={30}
                 width={25}
@@ -157,7 +157,7 @@ export default function Home() {
             </a>
             <a href="#" className="icon-link">
               <img
-                src="public/images/mongoDB.jpg"
+                src="images/mongoDB.jpg"
                 alt="Node.js"
                 height={30}
                 width={25}
