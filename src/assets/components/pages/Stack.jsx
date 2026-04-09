@@ -62,7 +62,10 @@ export default function Stack() {
             >
               <div className="card-content" style={{ padding: "1.5rem" }}>
                 <span className={tech.className}></span>
-                <h2>{tech.name}</h2>
+                <h2>
+                  {" "}
+                  <span className="degrader-violet">{tech.name}</span>
+                </h2>
                 <div className="language-description">
                   <p>{tech.description}</p>
                 </div>

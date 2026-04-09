@@ -53,6 +53,13 @@ body {
   overflow-x: hidden;
 }
 
+.degrader-violet {
+  background: linear-gradient(to right, rgb(213, 71, 252), #9000a9);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* RESPONSIVITE */
 
 @media (max-width: 768px) {

@@ -5,6 +5,7 @@ import TextType from "../animations/TextType";
 import StarBorder from "../animations/StarBorder";
 import SplitText from "../animations/SplitText";
 
+import Link from "../icons/Link";
 import { Dock, DockIcon } from "../animations/Dock";
 
 // pr s'assurer que les lettres sont animées
@@ -127,14 +128,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             <a href="#" className="icon-link">
-              <i className="fab fa-facebook-f">
-                <img
-                  src="images/react.png"
-                  alt="react"
-                  height={30}
-                  width={25}
-                />
-              </i>
+              <img src="images/react.png" alt="react" height={30} width={25} />
             </a>
 
             {/* test des techno dans lesquelles je veux exceller  */}
@@ -155,100 +149,25 @@ export default function Home() {
                 width={25}
               />
             </a>
-            <a href="#" className="icon-link">
+
+            {/* <a href="#" className="icon-link">
               <img
                 src="images/mongoDB.jpg"
                 alt="Node.js"
                 height={30}
                 width={25}
               />
-            </a>
-            {/* <div className="placement-stack">
-              <Dock direction="middle">
-                <DockIcon>
-                  <a
-                    href="https://github.com/Nolan-30"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="/images/css.png"
-                      alt="GitHub"
-                      style={{ width: "100%", height: "100%" }}
-                    />
-                  </a>
-                </DockIcon>
-                <DockIcon>
-                  <a
-                    href="https://www.linkedin.com/in/nolan-d-almeida"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="/images/JS.png"
-                      alt="LinkedIn"
-                      style={{ width: "100%", height: "100%" }}
-                    />
-                  </a>
-                </DockIcon>
-                <DockIcon>
-                  <a
-                    href="https://github.com/Nolan-30"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="/images/react.png"
-                      alt="GitHub"
-                      style={{ width: "100%", height: "100%" }}
-                    />
-                  </a>
-                </DockIcon>
-                <DockIcon>
-                  <a
-                    href="https://github.com/Nolan-30"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="/images/html.png"
-                      alt="GitHub"
-                      style={{ width: "100%", height: "100%" }}
-                    />
-                  </a>
-                </DockIcon>
-                <DockIcon>
-                  <a
-                    href="https://github.com/Nolan-30"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="/images/sql.png"
-                      alt="GitHub"
-                      style={{ width: "100%", height: "100%" }}
-                    />
-                  </a>
-                </DockIcon>
-                <DockIcon>
-                  <a
-                    href="https://github.com/Nolan-30"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="/images/nodejs.png"
-                      alt="GitHub"
-                      style={{ width: "100%", height: "100%" }}
-                    />
-                  </a>
-                </DockIcon>
-              </Dock>
-            </div> */}
+            </a> */}
+
+            {/* CV */}
+            <div className="cv-container">
+              <a href="">
+                <button>Télécharger</button>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>
-      {/* </div> */}
     </main>
   );
 }

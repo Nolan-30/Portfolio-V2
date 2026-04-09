@@ -176,6 +176,19 @@ h1 {
   top: 500px;
 }
 
+.cv-container {
+  display: flex;
+  justify-content: center;
+}
+.cv-container button {
+  color: var(--sous-texte);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-left: 25%;
+}
+
 /* ========================================= */
 /* RESPONSIVITE                              */
 /* ========================================= */

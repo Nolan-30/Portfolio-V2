@@ -38,17 +38,25 @@ export default function Project() {
 
       {/* ajt d'un index pr passer devant le bg */}
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
-        <h2 className="titre-section">
-          <GradientText
-            colors={["#570562", "#FF9FFC", "#B19EEF"]}
-            animationSpeed={8}
-            showBorder={false}
-            className="projets-realises-placement"
-          >
-            Réalisations
-          </GradientText>
-        </h2>
+        {/* partie titre */}
+        <section class="title-container">
+          <h2 className="titre-section">
+            <GradientText
+              colors={["#570562", "#FF9FFC", "#B19EEF"]}
+              animationSpeed={8}
+              showBorder={false}
+              className="weight"
+            >
+              Réalisations
+            </GradientText>
+          </h2>
+          <h3>
+            Retrouvez mes réalisations scolaire et personnels de septembre à
+            aujourd'hui
+          </h3>
+        </section>
 
+        {/* grille */}
         <div className="grille-projets">
           {projetsRealises.map((project) => (
             <div key={project.id} className="projet-item">
