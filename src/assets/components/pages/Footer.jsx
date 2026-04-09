@@ -44,7 +44,7 @@ export default function Footer() {
         <p className="mail">
           <a href="mailto:nolan.dalmeida07@gmail.com">
             <SplitText
-              text="nolan.dalmeida07@gmail.com"
+              text="nolan.dalmeidGa07@gmail.com"
               className="collaboration"
               delay={50}
               duration={2.5}
@@ -83,13 +83,13 @@ export default function Footer() {
         </div> */}
         <div className="rs">
           <a href="https://github.com/Nolan-30/Nolan" target="_blank">
-            <Github size={80} color="#ffffff" />{" "}
+            <Github size={50} color="#ffffff" />{" "}
           </a>
           <a
             href="https://www.linkedin.com/in/nolan-d-almeida-153112375/"
             target="_blank"
           >
-            <LinkedIn size={80} color="#ffffff" />
+            <LinkedIn size={50} color="#ffffff" />
           </a>
         </div>
 

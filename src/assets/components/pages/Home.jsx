@@ -5,7 +5,6 @@ import TextType from "../animations/TextType";
 import StarBorder from "../animations/StarBorder";
 import SplitText from "../animations/SplitText";
 
-import Link from "../icons/Link";
 import { Dock, DockIcon } from "../animations/Dock";
 
 // pr s'assurer que les lettres sont animées
@@ -47,7 +46,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <span className="point">•</span> DÉVELOPPEUR FRONT END - CODING
+            <span className="point">•</span> DÉVELOPPEUR Web Full-Stack - CODING
             FACTORY
           </motion.div>
 
@@ -161,7 +160,10 @@ export default function Home() {
 
             {/* CV */}
             <div className="cv-container">
-              <a href="">
+              <a
+                href="CV-Nolan-Dalmeida.pdf" // Le chemin part de la racine du dossier public
+                download="CV_Nolan_Dalmeida.pdf" // Le nom que le fichier aura une fois téléchargé
+              >
                 <button>Télécharger</button>
               </a>
             </div>
