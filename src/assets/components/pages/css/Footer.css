@@ -11,6 +11,19 @@ footer {
   font-size: 1.5rem;
 }
 
+.alternance {
+  display: flex;
+  justify-content: center;
+}
+
+.alternance p {
+  margin-left: 5px;
+}
+
+.searching-icon {
+  margin-left: 10px;
+}
+
 .lien-email {
   font-size: 1.1rem;
   font-weight: 700;

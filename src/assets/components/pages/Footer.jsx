@@ -4,6 +4,7 @@ import "./css/Footer.css";
 import SplitText from "../animations/SplitText";
 import { Dock, DockIcon } from "../animations/Dock";
 
+import Searching from "../icons/Searching";
 import LinkedIn from "../icons/LinkedIn";
 import Github from "../icons/Github";
 
@@ -39,12 +40,17 @@ export default function Footer() {
             showCallback
           />
         </h2>
-        <p>Je suis actuellement à la recherche d'une alternance.</p>
+        <div className="alternance">
+          <p>Je suis actuellement à la recherche d'une alternance </p>
+          <div className="searching-icon">
+            <Searching size={20} color="#ffffff" />{" "}
+          </div>
+        </div>
 
         <p className="mail">
           <a href="mailto:nolan.dalmeida07@gmail.com">
             <SplitText
-              text="nolan.dalmeidGa07@gmail.com"
+              text="nolan.dalmeid07@gmail.com"
               className="collaboration"
               delay={50}
               duration={2.5}
@@ -59,6 +65,7 @@ export default function Footer() {
               showCallback
             />
           </a>
+          <span class="style"></span>
         </p>
 
         {/* <div className="rs">

@@ -6,6 +6,7 @@ import StarBorder from "../animations/StarBorder";
 import SplitText from "../animations/SplitText";
 
 import { Dock, DockIcon } from "../animations/Dock";
+import Download from "../icons/Download";
 
 // pr s'assurer que les lettres sont animées
 const handleAnimationComplete = () => {
@@ -149,22 +150,12 @@ export default function Home() {
               />
             </a>
 
-            {/* <a href="#" className="icon-link">
-              <img
-                src="images/mongoDB.jpg"
-                alt="Node.js"
-                height={30}
-                width={25}
-              />
-            </a> */}
-
             {/* CV */}
             <div className="cv-container">
-              <a
-                href="CV-Nolan-Dalmeida.pdf" // Le chemin part de la racine du dossier public
-                download="CV_Nolan_Dalmeida.pdf" // Le nom que le fichier aura une fois téléchargé
-              >
-                <button>Télécharger</button>
+              <a href="CV-Nolan-Dalmeida.pdf" download="CV_Nolan_Dalmeida.pdf">
+                <button>
+                  <Download size={20} color="#ffffff" /> Télécharger Mon CV
+                </button>
               </a>
             </div>
           </motion.div>
