@@ -122,6 +122,8 @@ export default function Home() {
             </StarBorder>
           </motion.div>
 
+          {/* FOOTER DE L'ACCUEIL */}
+
           <motion.div
             className="social-icons"
             initial={{ opacity: 0 }}
@@ -151,24 +153,20 @@ export default function Home() {
               />
             </a>
 
-            {/* CV */}
+            {/* Bouton CV */}
+
             <div className="cv-container">
-              <a href="CV-Nolan-Dalmeida.pdf" download="CV_Nolan_Dalmeida.pdf">
-                <StarBorder as="div" color="magenta" speed="5s">
-                  <motion.a
-                    href="CV-Nolan-Dalmeida.pdf"
-                    download="CV_Nolan_Dalmeida.pdf"
-                    className="btn-download"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <div className="btn-download">
-                      Télécharger Mon CV <Download size={20} color="#ffffff" />
-                    </div>
-                  </motion.a>
-                </StarBorder>
-                <button></button>
-              </a>
+              <StarBorder as="div" color="magenta" speed="5s">
+                <motion.a
+                  href="CV-Nolan-Dalmeida.pdf"
+                  download="CV_Nolan_Dalmeida.pdf"
+                  className="btn-download"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Télécharger Mon CV <Download size={20} color="#ffffff" />
+                </motion.a>
+              </StarBorder>
             </div>
           </motion.div>
         </div>

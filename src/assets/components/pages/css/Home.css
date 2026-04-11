@@ -125,7 +125,6 @@ h1 {
 }
 
 .bouton-secondaire {
-  background-color: transparent;
   border: 1px solid rgb(16, 15, 15);
   color: #fff;
 }
@@ -179,22 +178,14 @@ h1 {
 .cv-container {
   display: flex;
 }
-/* .cv-container button {
-  color: white;
-  background-color: rgb(0, 0, 0);
-  /* border: 1px solid white; */
-
-/* border-radius: 10px;
-  padding: 1rem; */
-/* width: 200px; */
-/* }  */
 
 .cv-container a:hover {
   cursor: pointer;
 }
 
 .btn-download {
-  padding: 1rem;
+  padding: 0.85rem;
+  border-radius: 50px;
   border: 1px solid rgb(16, 15, 15);
 }
 /* ========================================= */
