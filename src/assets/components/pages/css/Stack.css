@@ -36,6 +36,13 @@
   line-height: 1.5;
   color: var(--sous-texte);
 }
+.title-subtitle {
+  color: var(--sous-texte);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
 
 @media (max-width: 768px) {
   .language-card {

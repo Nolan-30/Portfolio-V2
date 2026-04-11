@@ -46,6 +46,10 @@ export default function Stack() {
         >
           <h2>Stack</h2>
         </GradientText>
+        {/* <span className="title-subtitle">
+          Un aperçu des langages et frameworks qui me permettent de donner vie à
+          des interfaces soignées.
+        </span> */}
 
         <div className="languages-container">
           {technologies.map((tech, index) => (
@@ -77,3 +81,5 @@ export default function Stack() {
     </section>
   );
 }
+
+//

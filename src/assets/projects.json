@@ -11,6 +11,7 @@
      "iconGithub":"github", 
      "iconLinkedIn":"linkedin", 
     "iconName": "brain",
+       "iconProfile": "profile",
     "description": "Conception en équipe d'une plateforme alliant profils personnalisés et classements dynamiques.",
     "image": "/images/power-of-memory-interface.png",
     "githubUrl": "https://github.com/Nolan-30/Power-of-Memory",

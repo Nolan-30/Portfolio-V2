@@ -33,6 +33,11 @@
   width: 100%;
 }
 
+.title-sous-texte {
+  text-align: center;
+  max-width: 600px;
+}
+
 .carte-projet {
   border-radius: 1.5rem;
   padding: 2rem;

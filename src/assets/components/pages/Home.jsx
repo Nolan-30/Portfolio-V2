@@ -7,6 +7,7 @@ import SplitText from "../animations/SplitText";
 
 import { Dock, DockIcon } from "../animations/Dock";
 import Download from "../icons/Download";
+// import Profile from "../icons/Profile";
 
 // pr s'assurer que les lettres sont animées
 const handleAnimationComplete = () => {
@@ -153,9 +154,20 @@ export default function Home() {
             {/* CV */}
             <div className="cv-container">
               <a href="CV-Nolan-Dalmeida.pdf" download="CV_Nolan_Dalmeida.pdf">
-                <button>
-                  <Download size={20} color="#ffffff" /> Télécharger Mon CV
-                </button>
+                <StarBorder as="div" color="magenta" speed="5s">
+                  <motion.a
+                    href="CV-Nolan-Dalmeida.pdf"
+                    download="CV_Nolan_Dalmeida.pdf"
+                    className="btn-download"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <div className="btn-download">
+                      Télécharger Mon CV <Download size={20} color="#ffffff" />
+                    </div>
+                  </motion.a>
+                </StarBorder>
+                <button></button>
               </a>
             </div>
           </motion.div>
