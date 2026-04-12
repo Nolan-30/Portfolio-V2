@@ -16,7 +16,20 @@
   gap: 10%;
   align-items: center;
   z-index: 5; /* pr passer au dessus du composant LightRays */
-  margin-top: -20%;
+  margin-top: 5%;
+}
+
+/* msg de bvn */
+.welcome-msg {
+  position: absolute;
+  top: 200px;
+  z-index: 10;
+  text-align: center;
+  font-size: 3rem;
+  max-width: 1200px;
+}
+.weight-bold {
+  font-weight: 900;
 }
 
 .bloc-image {

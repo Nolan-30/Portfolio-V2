@@ -4,10 +4,10 @@ import LightRays from "../animations/LightRays";
 import TextType from "../animations/TextType";
 import StarBorder from "../animations/StarBorder";
 import SplitText from "../animations/SplitText";
+import GradientText from "../animations/GradientText";
 
 import { Dock, DockIcon } from "../animations/Dock";
 import Download from "../icons/Download";
-// import Profile from "../icons/Profile";
 
 // pr s'assurer que les lettres sont animées
 const handleAnimationComplete = () => {
@@ -24,6 +24,28 @@ export default function Home() {
         lightSpread={5.5}
         raysSpeed={0.5}
       />
+      <motion.div
+        className="welcome-msg"
+        initial={{ opacity: 0, y: -100 }} // Commence invisible et 50px au-dessus
+        animate={{ opacity: 1, y: 0 }} // Devient visible et à sa place
+        transition={{
+          duration: 1, // L'animation dure 0.8 seconde
+          delay: 0.1, // Petit délai de 0.1s avant de démarrer
+          ease: "easeOut", // Ralentit à la fin pour plus de douceur
+        }}
+      >
+        <GradientText
+          colors={["#570562", "#FF9FFC", "#B19EEF"]}
+          animationSpeed={6}
+          showBorder={false}
+          className=""
+        >
+          <span className="weight-bold">
+            De l'idée à la conception d'interfaces performantes et centrées sur
+            l'utilisateur.
+          </span>
+        </GradientText>
+      </motion.div>
 
       {/* cote gauche image*/}
       <div className="container-accueil">
@@ -56,7 +78,7 @@ export default function Home() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 3, delay: 0.4 }}
           >
             {/* animat° spilt text*/}
             <SplitText
@@ -78,17 +100,13 @@ export default function Home() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            transition={{ duration: 1.5, delay: 0.5 }}
           >
             <TextType
               text={[
                 "Je construis des expériences web modernes et sécurisées.",
               ]}
-              typingSpeed={10}
-              pauseDuration={200}
-              showCursor
-              deletingSpeed={10}
-              cursorBlinkDuration={0.5}
+              loop={false}
             />
           </motion.p>
 

@@ -39,17 +39,19 @@ export default function Stack() {
   return (
     <section id="stack" className="stack-section">
       <FadeContent duration={2000} easing="ease-out" initialOpacity={0}>
-        <GradientText
-          colors={["#570562", "#FF9FFC", "#B19EEF"]}
-          animationSpeed={8}
-          showBorder={false}
-        >
-          <h2>Stack</h2>
-        </GradientText>
-        {/* <span className="title-subtitle">
-          Un aperçu des langages et frameworks qui me permettent de donner vie à
-          des interfaces soignées.
-        </span> */}
+        <div className="title-container">
+          <GradientText
+            colors={["#570562", "#FF9FFC", "#B19EEF"]}
+            animationSpeed={8}
+            showBorder={false}
+          >
+            <h2>Stack</h2>
+          </GradientText>
+          <h3 className="title-sous-texte">
+            Un aperçu des langages, frameworks et outils que je maîtrise pour
+            bâtir des solutions numériques robustes et performantes.
+          </h3>
+        </div>
 
         <div className="languages-container">
           {technologies.map((tech, index) => (

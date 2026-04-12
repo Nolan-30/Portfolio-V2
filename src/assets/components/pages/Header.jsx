@@ -3,6 +3,7 @@ import "../animations/ThemeToggle";
 import GradientText from "../animations/GradientText";
 import ThemeToggle from "../animations/ThemeToggle";
 import GooeyNav from "../animations/GooeyNav";
+import Profile from "../icons/Profile";
 
 export default function Header() {
   return (
@@ -14,7 +15,10 @@ export default function Header() {
             animationSpeed={8}
             showBorder={false}
           >
-            Nolan D'almeida.
+            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+              <Profile size={28} color="currentColor" />
+              Nolan D'almeida.
+            </div>
           </GradientText>
         </div>
 
