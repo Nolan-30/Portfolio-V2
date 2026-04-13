@@ -15,6 +15,7 @@ import Heart from "../icons/Heart";
 import Question from "../icons/Question";
 import Sparkles from "../icons/Sparkles";
 import Link from "../icons/Link";
+// import Link from "../icons/Link";
 
 export default function ProjectCard({
   label,
@@ -46,6 +47,11 @@ export default function ProjectCard({
               style={{ margin: 0, height: "100%" }}
             >
               {/* ICON DE PROJET */}
+              <a
+                href="https://github.com/Nolan-30/Power-of-Memory/tree/Power-Of-Memory"
+                target="blank"
+                rel="noreferrer"
+              ></a>
               {iconName === "boat" && (
                 <div className="icons">
                   <NavalBattle size={80} color="#dd00ff" />
@@ -108,11 +114,14 @@ export default function ProjectCard({
               </div>
 
               <div className="lien-projet">
-                <Link size={40} color="#7a7a7a" />
-
-                {/* <a href={githubUrl} target="_blank" rel="noreferrer">
-                  Voir le Projet
-                </a> */}
+                {/* On vérifie si githubUrl existe avant d'afficher le lien */}
+                {githubUrl ? (
+                  <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                    <Link size={40} color="#7a7a7a" />
+                  </a>
+                ) : (
+                  <Link size={40} color="#282828" />
+                )}
               </div>
             </article>
           </div>

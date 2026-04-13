@@ -26,12 +26,12 @@ export default function Home() {
       />
       <motion.div
         className="welcome-msg"
-        initial={{ opacity: 0, y: -100 }} // Commence invisible et 50px au-dessus
-        animate={{ opacity: 1, y: 0 }} // Devient visible et à sa place
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 1, // L'animation dure 0.8 seconde
-          delay: 0.1, // Petit délai de 0.1s avant de démarrer
-          ease: "easeOut", // Ralentit à la fin pour plus de douceur
+          duration: 1,
+          delay: 0.1,
+          ease: "easeOut",
         }}
       >
         <GradientText
@@ -106,6 +106,11 @@ export default function Home() {
               text={[
                 "Je construis des expériences web modernes et sécurisées.",
               ]}
+              typingSpeed={50}
+              pauseDuration={200}
+              showCursor
+              deletingSpeed={5}
+              cursorBlinkDuration={0.5}
               loop={false}
             />
           </motion.p>

@@ -41,17 +41,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--sous-texte);
   margin: 3rem;
 }
 .title-sous-texte {
   text-align: center;
   max-width: 600px;
-
+  font: 1.1rem;
   color: var(--sous-texte);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .language-card {
   }
-}
+} */

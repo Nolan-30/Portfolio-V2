@@ -116,6 +116,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+
+/* surlignement au survol d'une techno */
+
+.stack-used span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.75s ease-in-out;
+}
+
+.stack-used span:hover::after {
+  width: 100%; /* Le trait prend tt la largeur du txt */
 }
 
 .lien-projet {
@@ -130,28 +152,11 @@
   padding-bottom: 2px;
 }
 
-.lien-projet a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--couleur-texte);
-  transition: width 1s ease-in-out;
-}
-
 .carte-projet h3 {
   color: var(--couleur-texte);
   font-size: 1.3rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
-}
-
-/* l'effet de survol sur "voir le projet" */
-
-.lien-projet a:hover::after {
-  width: 100%; /* Le trait prend tt la largeur du txt */
 }
 
 .placement-stack {

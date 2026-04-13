@@ -15,6 +15,7 @@ export default function Stack() {
         "Ma porte d'entrée dans le web. C'est en réalisant mon premier projet perso, Penthouse que j'ai découvert une réelle passion pour le frontend et le plaisir de donner vie à des interfaces soignées.",
     },
     {
+      img: "images/react-icon.png",
       name: "React",
       description:
         "Ma bibliothèque favorite pour créer des interfaces et animations fluides. Je l'utilise pour concevoir des composants réutilisables tout en excellant davantage en JavaScript.",

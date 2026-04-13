@@ -14,10 +14,10 @@ import "../css/animations/TextType.css";
 const TextType = ({
   text,
   as: Component = "div",
-  typingSpeed = 1, // Change 20 ou 50 par 1
+  typingSpeed = 1,
   initialDelay = 0,
-  pauseDuration = 0, // Change 500 ou 2000 par 0
-  deletingSpeed = 1, // Change 30 par 1
+  pauseDuration = 0,
+  deletingSpeed = 1,
   loop = true,
   className = "",
   showCursor = true,
