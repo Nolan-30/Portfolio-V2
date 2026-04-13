@@ -43,11 +43,10 @@
   align-items: center;
   margin: 3rem;
 }
-.title-sous-texte {
+.title-subtitle {
   text-align: center;
-  max-width: 600px;
-  font: 1.1rem;
-  color: var(--sous-texte);
+  max-width: 500px;
+  font-size: 1.25rem;
 }
 
 /* @media (max-width: 768px) {

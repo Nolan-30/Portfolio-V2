@@ -116,6 +116,7 @@ export default function Home() {
           </motion.p>
 
           {/* grp de btn */}
+
           <motion.div
             className="groupe-boutons"
             initial={{ opacity: 0, y: 20 }}
@@ -146,52 +147,62 @@ export default function Home() {
           </motion.div>
 
           {/* FOOTER DE L'ACCUEIL */}
+          <section className="grp-btn">
+            <motion.div
+              className="languages-icons"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
+              <a href="#" className="icon-link">
+                <img
+                  src="images/react.png"
+                  alt="react"
+                  height={30}
+                  width={25}
+                />
+              </a>
 
-          <motion.div
-            className="social-icons"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-          >
-            <a href="#" className="icon-link">
-              <img src="images/react.png" alt="react" height={30} width={25} />
-            </a>
+              {/* test des techno dans lesquelles je veux exceller  */}
 
-            {/* test des techno dans lesquelles je veux exceller  */}
+              <a href="#" className="icon-link">
+                <img
+                  src="images/tailwind.png"
+                  alt="Tailwind"
+                  height={30}
+                  width={25}
+                />
+              </a>
+              <a href="#" className="icon-link">
+                <img
+                  src="images/nodejs.png"
+                  alt="Node.js"
+                  height={30}
+                  width={25}
+                />
+              </a>
 
-            <a href="#" className="icon-link">
-              <img
-                src="images/tailwind.png"
-                alt="Tailwind"
-                height={30}
-                width={25}
-              />
-            </a>
-            <a href="#" className="icon-link">
-              <img
-                src="images/nodejs.png"
-                alt="Node.js"
-                height={30}
-                width={25}
-              />
-            </a>
+              {/* Bouton CV */}
 
-            {/* Bouton CV */}
-
-            <div className="cv-container">
-              <StarBorder as="div" color="magenta" speed="5s">
-                <motion.a
-                  href="CV-Nolan-Dalmeida.pdf"
-                  download="CV_Nolan_Dalmeida.pdf"
-                  className="btn-download"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Télécharger Mon CV <Download size={20} color="#ffffff" />
-                </motion.a>
-              </StarBorder>
-            </div>
-          </motion.div>
+              <div className="cv-container">
+                <StarBorder as="div" color="magenta" speed="5s">
+                  <motion.a
+                    href="CV-Nolan-Dalmeida.pdf"
+                    download="CV_Nolan_Dalmeida.pdf"
+                    className="btn-download"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Télécharger Mon CV
+                    {/* utilisation d'un span pour pouvoir deplacer l'icon manuellement */}
+                    <span className="download-icon">
+                      <Download size={20} color="#ffffff" />
+                    </span>
+                  </motion.a>
+                </StarBorder>
+              </div>
+            </motion.div>
+          </section>
         </div>
       </div>
     </main>

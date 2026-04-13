@@ -4,12 +4,11 @@ import GradientText from "../animations/GradientText";
 import GlareHover from "../animations/GlareHover";
 import FadeContent from "../animations/FadeContent";
 
-import { section } from "motion/react-client";
-
 export default function Stack() {
-  // donnes pr chaque carte
+  // Données pour chaque carte avec ajout des chemins d'images
   const technologies = [
     {
+      img: "images/html-icon.png",
       name: "HTML / CSS",
       description:
         "Ma porte d'entrée dans le web. C'est en réalisant mon premier projet perso, Penthouse que j'ai découvert une réelle passion pour le frontend et le plaisir de donner vie à des interfaces soignées.",
@@ -21,16 +20,19 @@ export default function Stack() {
         "Ma bibliothèque favorite pour créer des interfaces et animations fluides. Je l'utilise pour concevoir des composants réutilisables tout en excellant davantage en JavaScript.",
     },
     {
+      img: "images/js-icon.png",
       name: "JavaScript",
       description:
         "Le moteur de mes projets. C'est avec ce langage que j'ai appris à rendre mes interfaces vivantes et interactives, transformant des designs statiques en véritables expériences utilisateur.",
     },
     {
+      img: "images/sql-icon.png",
       name: "SQL",
       description:
         "L'art de structurer la donnée. Je l'utilise pour concevoir des bases de données relationnelles robustes et optimiser la persistance des informations au cœur de mes applications.",
     },
     {
+      img: "images/php-icon.png",
       name: "PHP",
       description:
         "Ce langage m'a permis de comprendre la gestion côté serveur et de créer mes premières architectures web complètes et fonctionnelles.",
@@ -48,7 +50,7 @@ export default function Stack() {
           >
             <h2>Stack</h2>
           </GradientText>
-          <h3 className="title-sous-texte">
+          <h3 className="title-subtitle">
             Un aperçu des langages, frameworks et outils que je maîtrise pour
             bâtir des solutions numériques robustes et performantes.
           </h3>
@@ -67,10 +69,25 @@ export default function Stack() {
               glareSize={200}
               className="language-card"
             >
-              <div className="card-content" style={{ padding: "1.5rem" }}>
-                <span className={tech.className}></span>
+              <div
+                className="card-content"
+                style={{ padding: "1.5rem", textAlign: "center" }}
+              >
+                {/* Affichage les langages */}
+                {tech.img && (
+                  <img
+                    src={tech.img}
+                    alt={tech.name}
+                    style={{
+                      width: "120px",
+                      height: "120px",
+
+                      objectFit: "contain",
+                    }}
+                  />
+                )}
+
                 <h2>
-                  {" "}
                   <span className="degrader-violet">{tech.name}</span>
                 </h2>
                 <div className="language-description">
@@ -84,5 +101,3 @@ export default function Stack() {
     </section>
   );
 }
-
-//

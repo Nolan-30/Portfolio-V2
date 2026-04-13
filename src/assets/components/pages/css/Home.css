@@ -109,6 +109,11 @@ h1 {
 }
 
 /* PARTIE BOUTONS */
+.grp-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .groupe-boutons {
   display: flex;
@@ -147,15 +152,15 @@ h1 {
 }
 
 /* box icon*/
-.social-icons {
+.languages-icons {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.social-icons img {
+.languages-icons img {
   /* margin-top: 20%; */
   display: flex;
-
   height: auto;
   width: 25px;
 }
@@ -183,6 +188,10 @@ h1 {
   color: #fff;
 }
 
+.download-icon {
+  left: 100px;
+}
+
 .placement-stack {
   right: 100px;
   top: 500px;
@@ -197,6 +206,9 @@ h1 {
 }
 
 .btn-download {
+  display: flex;
+  justify-content: center;
+
   padding: 0.85rem;
   border-radius: 50px;
   border: 1px solid rgb(16, 15, 15);
