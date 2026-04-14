@@ -1,5 +1,3 @@
-
-
 [
   {
     "id": 1,
@@ -7,20 +5,18 @@
     "label": "Projet Scolaire",
     "date": "Sep 2025 - Dec 2025",
     "title": "Power Of Memory",
-     "iconLink":"link", 
-     "iconGithub":"github", 
-     "iconLinkedIn":"linkedin", 
+    "iconLink": "link",
     "iconName": "brain",
-       "iconProfile": "profile",
+    "iconProfile": "profile",
     "description": "Conception en équipe d'une plateforme alliant profils personnalisés et classements dynamiques.",
     "image": "/images/power-of-memory-interface.png",
     "githubUrl": "https://github.com/Nolan-30/Power-of-Memory",
     "stack": [
-      { "name": "HTML", "icon": "/images/html.png", "class": "html" },
-      { "name": "CSS", "icon": "/images/css.png", "class": "css" },
-      { "name": "JavaScript", "icon": "/images/JS.png", "class": "js" },
-      { "name": "SQL", "icon": "/images/sql.png", "class": "sql" },
-      { "name": "PHP", "icon": "/images/php.png", "class": "php" }
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "JavaScript" },
+      { "name": "SQL" },
+      { "name": "PHP" }
     ]
   },
   {
@@ -29,11 +25,11 @@
     "label": "Projet Scolaire",
     "date": "Oct 2025 - Oct 2025",
     "title": "Bataille Navale",
-    "iconName" : "boat",
+    "iconName": "boat",
     "description": "Simulation stratégique de combat naval face à une IA, développée avec une architecture modulaire.",
     "githubUrl": "https://github.com/Nolan-30/Bataille-Navale",
     "stack": [
-      { "name": "Python", "icon": "/images/python.png", "class": "python" }
+      { "name": "Python" }
     ]
   },
   {
@@ -42,14 +38,14 @@
     "label": "Projet Personnel",
     "date": "Oct 2025 - Jan 2026",
     "title": "Penthouse",
-    "iconName" :"eye",
+    "iconName": "eye",
     "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
     "image": "/images/PTS.jpg",
     "githubUrl": "https://nolan-30.github.io/Penthouse/",
     "stack": [
-      { "name": "HTML", "icon": "/images/html.png", "class": "html" },
-      { "name": "CSS", "icon": "/images/css.png", "class": "css" },
-      { "name": "AOS", "icon": "/images/AOS.png", "class": "aos" }
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "AOS" }
     ]
   },
   {
@@ -58,11 +54,11 @@
     "label": "Projet Scolaire",
     "date": "Jan 2026 - Jan 2026",
     "title": "Gladiator Arena",
-    "iconName" : "skull",
+    "iconName": "skull",
     "description": "Affrontez un panel d'ennemis variés avec système de classes, gestion d'inventaire et combats.",
     "githubUrl": "https://github.com/Nolan-30/Gladiator-Arena",
     "stack": [
-      { "name": "Java", "icon": "/images/java.png", "class": "java" }
+      { "name": "Java" }
     ]
   },
   {
@@ -71,67 +67,72 @@
     "label": "Projet Scolaire",
     "date": "Fev 2026 - Fev 2026",
     "title": "Escape",
-    "iconName" : "heart",
+    "iconName": "heart",
     "description": "Survivez à une pluie d'objets en esquivant les bombes et en collectant des bonus.",
     "image": "/images/Escape.png",
     "githubUrl": "https://mega.nz/fm/fsh1WSyR",
     "stack": [
-      { "name": "Unity", "icon": "/images/Unity.png", "class": "unity" },
-      { "name": "C#", "icon": "/images/C-Sharp.png", "class": "csharp" }
+      { "name": "Unity" },
+      { "name": "C#" }
     ]
   },
-    {
-  "id": 6,
-  "incoming": false,
-  "label": "Projet Personnel",
-  "date": "Fev 2026 - Mar 2026",
-  "title": "Portfolio",
-
-
-  "iconName":"code",
-  "description": "Développement d'un site présentant mes projets et mes compétences.",
-  "githubUrl": "https://nolan-30.github.io/Portfolio/",
-  "stack": [
-    { "name": "HTML", "icon": "/images/html.png", "class": "html" },
-    { "name": "CSS", "icon": "/images/css.png", "class": "css" },
-    { "name": "JavaScript", "icon": "/images/JS.png", "class": "js" }
-  ]
-},
+  {
+    "id": 6,
+    "incoming": false,
+    "label": "Projet Personnel",
+    "date": "Fev 2026 - Mar 2026",
+    "title": "Portfolio",
+    "iconName": "code",
+    "description": "Développement d'un site présentant mes projets et mes compétences.",
+    "githubUrl": "https://nolan-30.github.io/Portfolio/",
+    "stack": [
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "JavaScript" }
+    ]
+  },
   {
     "id": 7,
     "incoming": false,
     "label": "Projet Scolaire",
-    "date": "À venir",
-    "title": "SNK Wiki",
-    "iconName" : "question",
-    "description": "Site interactif intégrant un système de progression par quiz pour débloquer chaque section de la page.",
-    "githubUrl": "",
+    "date": "Mar 2026 - Mar 2026",
+    "title": "Trumposaur",
+    "iconName": "sparkles",
+    "description": "Clicker-Swiper de gestion de buzz. Transformez chaque décision politique en levier d'influence.",
+    "githubUrl": "https://github.com/Nolan-30/Trumposaur",
     "stack": [
-      { "name": "React", "icon": "/images/react.png", "class": "react" },
-       { "name": "CSS", "icon": "/images/css.png", "class": "css" },
-      { "name": "Nodejs", "icon": "/images/nodejs.png", "class": "nodejs" }
-     
-
-     
+      { "name": "React" },
+      { "name": "Tailwind" },
+      { "name": "Framer Motion" }
     ]
   },
   {
     "id": 8,
     "incoming": false,
+    "label": "Projet Scolaire",
+    "date": "À venir",
+    "title": "SNK Wiki",
+    "iconName": "question",
+    "description": "Site interactif intégrant un système de progression par quiz pour débloquer chaque section de la page.",
+    "githubUrl": "",
+    "stack": [
+      { "name": "React" },
+      { "name": "CSS" },
+      { "name": "Nodejs" }
+    ]
+  },
+  {
+    "id": 9,
+    "incoming": false,
     "label": "Projet Personnel",
     "date": "À venir",
     "title": "Penthouse V2",
-    "iconName" :"sparkles",
-
+    "iconName": "sparkles",
     "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
     "githubUrl": "",
     "stack": [
-      { "name": "React", "icon": "/images/react.png", "class": "react" },
-      { "name": "Tailwind", "icon": "/images/tailwind.png", "class": "tailwind" }
+      { "name": "React" },
+      { "name": "Tailwind" }
     ]
-    
   }
-
-
-  
 ]

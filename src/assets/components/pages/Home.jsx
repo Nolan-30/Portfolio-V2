@@ -116,7 +116,7 @@ export default function Home() {
 
           {/* grp de btn */}
           <motion.div
-            className="groupe-boutons"
+            className="grp-btn"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -180,12 +180,12 @@ export default function Home() {
             <StarBorder as="div" color="magenta" speed="5s">
               <motion.a
                 href="CV-Nolan-Dalmeida.pdf"
-                download="CV_Nolan_Dalmeida.pdf"
+                download="CV-Nolan-Dalmeida.pdf"
                 className="btn-download"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Télécharger CV <Download size={20} color="#ffffff" />
+                TÉLÉCHARGER CV <Download size={20} color="#ffffff" />
               </motion.a>
             </StarBorder>
           </motion.div>
