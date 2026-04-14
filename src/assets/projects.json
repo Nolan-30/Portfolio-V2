@@ -101,9 +101,10 @@
     "description": "Clicker-Swiper de gestion de buzz. Transformez chaque décision politique en levier d'influence.",
     "githubUrl": "https://github.com/Nolan-30/Trumposaur",
     "stack": [
-      { "name": "React" },
-      { "name": "Tailwind" },
-      { "name": "Framer Motion" }
+      { "name": "Next.js" },
+            { "name": "Typescript" },
+      { "name": "Tailwind" }
+
     ]
   },
   {
@@ -118,7 +119,7 @@
     "stack": [
       { "name": "React" },
       { "name": "CSS" },
-      { "name": "Nodejs" }
+      { "name": "Node.js" }
     ]
   },
   {

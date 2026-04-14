@@ -9,7 +9,7 @@ import Stack from "./assets/components/pages/Stack";
 import FadeContent from "./assets/components/animations/FadeContent";
 import { ScrollProgress } from "./assets/components/animations/ScrollProgress";
 import FloatingLines from "./assets/components/animations/FloatingLines";
-import LightPillar from "./assets/components/animations/LightPillar"; // Vérifie bien le chemin d'import
+import LightPillar from "./assets/components/animations/LightPillar";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <div
           style={{
             width: "100%",
-            height: "100%",
+            height: "1200px",
             position: "absolute",
             top: 0,
             left: 0,
