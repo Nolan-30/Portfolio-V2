@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import TextType from "../animations/TextType";
 import StarBorder from "../animations/StarBorder";
 import SplitText from "../animations/SplitText";
-import GradientText from "../animations/GradientText";
+// import GradientText from "../animations/GradientText";
 
 import { Dock, DockIcon } from "../animations/Dock";
 import Download from "../icons/Download";
@@ -34,17 +34,18 @@ export default function Home() {
           ease: "easeOut", // Ralentit à la fin pour plus de douceur
         }}
       >
-        <GradientText
+        {/* <GradientText
           colors={["#570562", "#FF9FFC", "#B19EEF"]}
           animationSpeed={6}
           showBorder={false}
           className=""
-        >
-          <span className="weight-bold">
-            De l'idée à la conception d'interfaces performantes et centrées sur
-            l'utilisateur.
-          </span>
-        </GradientText>
+        > */}
+        <span className="weight-bold">
+          Fort d'une sensibilité marquée pour le frontend, j'allie technique et
+          design pour concevoir des expériences utilisateur intuitives et
+          réactives.
+        </span>
+        {/* </GradientText> */}
       </motion.div>
 
       {/* cote gauche image*/}
@@ -103,9 +104,7 @@ export default function Home() {
             transition={{ duration: 1.5, delay: 0.5 }}
           >
             <TextType
-              text={[
-                "Je construis des expériences web modernes et sécurisées.",
-              ]}
+              text={["Je crée des sites web modernes et sécurisés."]}
               typingSpeed={50}
               pauseDuration={200}
               showCursor
@@ -178,19 +177,17 @@ export default function Home() {
 
             {/* Bouton CV */}
 
-            <div className="cv-container">
-              <StarBorder as="div" color="magenta" speed="5s">
-                <motion.a
-                  href="CV-Nolan-Dalmeida.pdf"
-                  download="CV_Nolan_Dalmeida.pdf"
-                  className="btn-download"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Télécharger CV <Download size={20} color="#ffffff" />
-                </motion.a>
-              </StarBorder>
-            </div>
+            <StarBorder as="div" color="magenta" speed="5s">
+              <motion.a
+                href="CV-Nolan-Dalmeida.pdf"
+                download="CV_Nolan_Dalmeida.pdf"
+                className="btn-download"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Télécharger CV <Download size={20} color="#ffffff" />
+              </motion.a>
+            </StarBorder>
           </motion.div>
         </div>
       </div>
