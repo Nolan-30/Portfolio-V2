@@ -1,32 +1,39 @@
 .banniere-accueil {
-  height: 150vh;
+  min-height: 100vh; /* On utilise min-height au lieu de height fixe */
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Empile le texte de bienvenue PUIS le portrait */
+  justify-content: flex-start; /* Aligne vers le haut */
   align-items: center;
   padding: 0 5%;
   position: relative;
-  overflow: hidden;
-  background-color: #000000;
+  background-color: transparent;
 }
 
 .container-accueil {
   display: flex;
   width: 100%;
   max-width: 1300px;
-  gap: 10%;
+  gap: 5%;
   align-items: center;
-  z-index: 5; /* pr passer au dessus du composant LightRays */
-  margin-top: 20%;
+  z-index: 5;
+  margin-top: 50px; /* Espace entre le texte de bienvenue et le portrait */
+  padding-bottom: 100px;
+}
+
+.hero-background {
+  pointer-events: none; /* Pour être sûr de pouvoir cliquer sur les boutons */
 }
 
 /* msg de bvn */
 .welcome-msg {
-  position: absolute;
-  top: 200px;
-  z-index: 10;
-  text-align: center;
-  font-size: 3rem;
-  max-width: 1200px;
+  position: relative !important; /* On annule l'absolute qui causait le bug */
+  top: 0 !important; /* On remet à zéro */
+  margin-top: 120px; /* Crée l'espace nécessaire sous le Header fixe */
+  margin-bottom: 2rem; /* Espace avant ton portrait */
+  padding: 0 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .weight-bold {
   font-weight: 900;
@@ -59,6 +66,7 @@
 }
 
 .contenu-banniere {
+  margin-left: 20%;
   flex: 1; /* txt prend 60 % de la width */
   display: flex;
   flex-direction: column;
@@ -155,12 +163,12 @@ h1 {
 .languages-icons {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .languages-icons img {
-  /* margin-top: 20%; */
   display: flex;
+
   height: auto;
   width: 25px;
 }
@@ -184,21 +192,13 @@ h1 {
 }
 
 .icon-link:hover {
-  background-color: var(--couleur-accent); /* Ta couleur au hover */
+  background-color: var(--couleur-accent);
   color: #fff;
-}
-
-.download-icon {
-  left: 100px;
-}
-
-.placement-stack {
-  right: 100px;
-  top: 500px;
 }
 
 .cv-container {
   display: flex;
+  justify-content: center;
 }
 
 .cv-container a:hover {
@@ -208,8 +208,9 @@ h1 {
 .btn-download {
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  padding: 0.85rem;
+  padding: 1rem 2.5rem;
   border-radius: 50px;
   border: 1px solid rgb(16, 15, 15);
 }

@@ -1,6 +1,6 @@
 import "./css/Home.css";
 import { motion } from "framer-motion";
-import LightRays from "../animations/LightRays";
+// import LightRays from "../animations/LightRays";
 import TextType from "../animations/TextType";
 import StarBorder from "../animations/StarBorder";
 import SplitText from "../animations/SplitText";
@@ -17,21 +17,21 @@ const handleAnimationComplete = () => {
 export default function Home() {
   return (
     <main id="accueil" className="banniere-accueil">
-      <LightRays
+      {/* <LightRays
         raysOrigin="top-center"
         raysColor="#ffffff"
         rayLength={0.5}
         lightSpread={5.5}
         raysSpeed={0.5}
-      />
+      /> */}
       <motion.div
         className="welcome-msg"
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }} // Commence invisible et 50px au-dessus
+        animate={{ opacity: 1, y: 0 }} // Devient visible et à sa place
         transition={{
-          duration: 1,
-          delay: 0.1,
-          ease: "easeOut",
+          duration: 1, // L'animation dure 0.8 seconde
+          delay: 0.1, // Petit délai de 0.1s avant de démarrer
+          ease: "easeOut", // Ralentit à la fin pour plus de douceur
         }}
       >
         <GradientText
@@ -116,7 +116,6 @@ export default function Home() {
           </motion.p>
 
           {/* grp de btn */}
-
           <motion.div
             className="groupe-boutons"
             initial={{ opacity: 0, y: 20 }}
@@ -147,62 +146,52 @@ export default function Home() {
           </motion.div>
 
           {/* FOOTER DE L'ACCUEIL */}
-          <section className="grp-btn">
-            <motion.div
-              className="languages-icons"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-            >
-              <a href="#" className="icon-link">
-                <img
-                  src="images/react.png"
-                  alt="react"
-                  height={30}
-                  width={25}
-                />
-              </a>
 
-              {/* test des techno dans lesquelles je veux exceller  */}
+          <motion.div
+            className="languages-icons"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+          >
+            <a href="#" className="icon-link">
+              <img src="images/react.png" alt="react" height={30} width={25} />
+            </a>
 
-              <a href="#" className="icon-link">
-                <img
-                  src="images/tailwind.png"
-                  alt="Tailwind"
-                  height={30}
-                  width={25}
-                />
-              </a>
-              <a href="#" className="icon-link">
-                <img
-                  src="images/nodejs.png"
-                  alt="Node.js"
-                  height={30}
-                  width={25}
-                />
-              </a>
+            {/* test des techno dans lesquelles je veux exceller  */}
 
-              {/* Bouton CV */}
+            <a href="#" className="icon-link">
+              <img
+                src="images/tailwind.png"
+                alt="Tailwind"
+                height={30}
+                width={25}
+              />
+            </a>
+            <a href="#" className="icon-link">
+              <img
+                src="images/nodejs.png"
+                alt="Node.js"
+                height={30}
+                width={25}
+              />
+            </a>
 
-              <div className="cv-container">
-                <StarBorder as="div" color="magenta" speed="5s">
-                  <motion.a
-                    href="CV-Nolan-Dalmeida.pdf"
-                    download="CV_Nolan_Dalmeida.pdf"
-                    className="btn-download"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    Télécharger Mon CV
-                    {/* utilisation d'un span pour pouvoir deplacer l'icon manuellement */}
-                    <span className="download-icon">
-                      <Download size={20} color="#ffffff" />
-                    </span>
-                  </motion.a>
-                </StarBorder>
-              </div>
-            </motion.div>
-          </section>
+            {/* Bouton CV */}
+
+            <div className="cv-container">
+              <StarBorder as="div" color="magenta" speed="5s">
+                <motion.a
+                  href="CV-Nolan-Dalmeida.pdf"
+                  download="CV_Nolan_Dalmeida.pdf"
+                  className="btn-download"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Télécharger CV <Download size={20} color="#ffffff" />
+                </motion.a>
+              </StarBorder>
+            </div>
+          </motion.div>
         </div>
       </div>
     </main>

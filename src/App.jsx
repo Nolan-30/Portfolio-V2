@@ -1,45 +1,60 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import "./App.css";
 import Header from "./assets/components/pages/Header";
 import Footer from "./assets/components/pages/Footer";
 import Home from "./assets/components/pages/Home";
 import Project from "./assets/components/pages/Project";
-// import ProjectDetail from "./assets/components/pages/ProjectDetail"; // On le crée à l'étape 3
 import Stack from "./assets/components/pages/Stack";
 import FadeContent from "./assets/components/animations/FadeContent";
 import { ScrollProgress } from "./assets/components/animations/ScrollProgress";
-
-const MainPage = () => (
-  <>
-    <Home />
-    <Project />
-    <Stack />
-  </>
-);
+import FloatingLines from "./assets/components/animations/FloatingLines";
+import LightPillar from "./assets/components/animations/LightPillar"; // Vérifie bien le chemin d'import
 
 function App() {
   return (
     <Router>
-      <ScrollProgress />
-      <FadeContent
-        blur={true}
-        duration={1000}
-        easing="ease-out"
-        initialOpacity={0}
-      />
+      <div className="app-wrapper">
+        <ScrollProgress />
 
-      <Header />
+        {/* Ajout du LightPillar par-dessus les lignes */}
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            pointerEvents: "none",
+          }}
+        >
+          <LightPillar
+            topColor="#5227FF"
+            bottomColor="#FF9FFC"
+            intensity={1}
+            rotationSpeed={0.3}
+            glowAmount={0.002}
+            pillarWidth={3}
+            pillarHeight={0.4}
+            noiseIntensity={0.5}
+            pillarRotation={25}
+            interactive={false}
+            mixBlendMode="screen"
+            quality="high"
+          />
+        </div>
 
-      {/* <Routes>
-  
-        <Route path="/" element={<MainPage />} />
+        <div style={{ position: "relative", zIndex: 1 }}>
+          <Header />
+          <Home />
+        </div>
+      </div>
 
-       
-        <Route path="/projet/:id" element={<ProjectDetail />} />
-      </Routes> */}
+      <main style={{ position: "relative", zIndex: 2, background: "#000" }}>
+        <Project />
+        <Stack />
+      </main>
 
-      <MainPage />
       <Footer />
     </Router>
   );

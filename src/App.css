@@ -110,6 +110,32 @@ body {
   }
 }
 
+.app-container {
+  position: relative;
+  width: 100%;
+}
+
+.global-bg {
+  position: fixed; /* Fixé à l'écran, ne bouge pas au scroll */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Derrière tout le contenu */
+  background-color: #000; /* Couleur de fond de secours */
+}
+
+.content-layer {
+  position: relative;
+  z-index: 1; /* S'assure que le texte est au-dessus et cliquable */
+}
+
+/* IMPORTANT : Tes composants Header et Home doivent avoir un fond transparent */
+.header,
+.banniere-accueil {
+  background: transparent !important;
+}
+
 /* --------------------- */
 /* --- RESPONSIVITE --- */
 /* --------------------- */
