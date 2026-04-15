@@ -15,7 +15,8 @@ import Heart from "../icons/Heart";
 import Question from "../icons/Question";
 import Sparkles from "../icons/Sparkles";
 import Link from "../icons/Link";
-// import Link from "../icons/Link";
+import Click from "../icons/Click";
+import Rocket from "../icons/Rocket";
 
 export default function ProjectCard({
   label,
@@ -93,6 +94,11 @@ export default function ProjectCard({
                   <Sparkles size={80} color="#dd00ff" />
                 </div>
               )}
+              {iconName === "click" && (
+                <div className="icons">
+                  <Click size={80} color="#dd00ff" />
+                </div>
+              )}
               <div className="titre-carte">
                 <span className="etiquette-projet">{label}</span>
                 <span className="date-projet">{date}</span>
@@ -117,10 +123,11 @@ export default function ProjectCard({
                 {/* On vérifie si githubUrl existe avant d'afficher le lien */}
                 {githubUrl ? (
                   <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Link size={40} color="#7a7a7a" />
+                    <Link size={30} color="#ffffff" />
                   </a>
                 ) : (
-                  <Link size={40} color="#282828" />
+                  // icon pr les projets a venir
+                  <Rocket size={40} color="#7a7a7a" />
                 )}
               </div>
             </article>

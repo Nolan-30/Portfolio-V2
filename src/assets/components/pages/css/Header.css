@@ -36,7 +36,7 @@
   color: var(--couleur-texte);
 
   font-weight: 900;
-  opacity: 0.7;
+  opacity: 1.7;
   transition: opacity 0.3s;
   font-size: 1.2rem;
 }
@@ -44,6 +44,33 @@
 .nav-links a:hover {
   opacity: 1;
 }
+
+/* test surlignement sur la navbar */
+
+.nav-links a {
+  position: relative;
+
+  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
+}
+
+/* test pr mettre un surlignement lorsqu'on passe sur les prenoms des perso comme dans le header */
+.nav-links a::after {
+  content: ""; /* permet un ptit surlignement au survol de la list*/
+  position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
+  width: 0;
+  height: 2px; /* hauteur du surlignement */
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transition: width 1s ease; /* largeur de l'animation de la ligne */
+  /* background-color: rgb(255, 215, 0, 0.5); */
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
+}
+
+/* fin du test de surlignement */
 
 #bouton-theme {
   background: none;

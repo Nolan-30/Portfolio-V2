@@ -1,6 +1,102 @@
 [
-  {
+    {
     "id": 1,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "date": "Mar 2026 - Mar 2026",
+    "title": "Jeu Clicker",
+    "iconName": "click",
+    "description": "Clicker-Swiper de gestion de buzz. Transformez chaque décision politique en levier d'influence.",
+    "githubUrl": "https://github.com/Nolan-30/Trumposaur",
+    "stack": [
+      { "name": "Next.js" },
+            { "name": "Typescript" },
+      { "name": "Tailwind" }
+
+    ]
+  },
+    {
+    "id": 2,
+    "incoming": false,
+    "label": "Projet Personnel",
+    "date": "Fev 2026 - Mar 2026",
+    "title": "Portfolio",
+    "iconName": "code",
+    "description": "Développement d'un site vitrine présentant mes projets, mes compétences techniques et créatives",
+    "githubUrl": "https://nolan-30.github.io/Portfolio/",
+    "stack": [
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "JavaScript" }
+    ]
+  },
+    {
+    "id": 3,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "date": "Fev 2026 - Fev 2026",
+    "title": "Escape",
+    "iconName": "heart",
+    "description": "Survivez à une pluie d'objets en esquivant les bombes tout en collectant des bonus pour augmenter votre score final.",
+    "image": "/images/Escape.png",
+    "githubUrl": "https://mega.nz/fm/fsh1WSyR",
+    "stack": [
+      { "name": "Unity" },
+      { "name": "C#" }
+    ]
+  },
+    {
+    "id": 4,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "date": "Jan 2026 - Jan 2026",
+    "title": "Gladiator Arena",
+    "iconName": "skull",
+    "description": "Affrontez un panel d'ennemis variés avec système de classes, gestion d'inventaire pour un gameplay tactique enrichi.",
+    "githubUrl": "https://github.com/Nolan-30/Gladiator-Arena",
+    "stack": [
+      { "name": "Java" },
+       
+       { "name": "Maven" },
+       { "name": "IntelliJ IDEA" }
+   
+    ]
+  },
+
+ 
+  {
+    "id": 5,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "date": "Oct 2025 - Oct 2025",
+    "title": "Bataille Navale",
+    "iconName": "boat",
+    "description": "Simulation stratégique de combat naval face à une , IA développée avec une architecture modulaire.",
+    "githubUrl": "https://github.com/Nolan-30/Bataille-Navale",
+    "stack": [
+      { "name": "Python" }
+    ]
+  },
+  {
+    "id": 6,
+    "incoming": false,
+    "label": "Projet Personnel",
+    "date": "Oct 2025 - Jan 2026",
+    "title": "Penthouse",
+    "iconName": "eye",
+    "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
+    "image": "/images/PTS.jpg",
+    "githubUrl": "https://nolan-30.github.io/Penthouse/",
+    "stack": [
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "AOS" }
+    ]
+  },
+
+
+   {
+    "id": 7,
     "incoming": false,
     "label": "Projet Scolaire",
     "date": "Sep 2025 - Dec 2025",
@@ -19,94 +115,7 @@
       { "name": "PHP" }
     ]
   },
-  {
-    "id": 2,
-    "incoming": false,
-    "label": "Projet Scolaire",
-    "date": "Oct 2025 - Oct 2025",
-    "title": "Bataille Navale",
-    "iconName": "boat",
-    "description": "Simulation stratégique de combat naval face à une IA, développée avec une architecture modulaire.",
-    "githubUrl": "https://github.com/Nolan-30/Bataille-Navale",
-    "stack": [
-      { "name": "Python" }
-    ]
-  },
-  {
-    "id": 3,
-    "incoming": false,
-    "label": "Projet Personnel",
-    "date": "Oct 2025 - Jan 2026",
-    "title": "Penthouse",
-    "iconName": "eye",
-    "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
-    "image": "/images/PTS.jpg",
-    "githubUrl": "https://nolan-30.github.io/Penthouse/",
-    "stack": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "AOS" }
-    ]
-  },
-  {
-    "id": 4,
-    "incoming": false,
-    "label": "Projet Scolaire",
-    "date": "Jan 2026 - Jan 2026",
-    "title": "Gladiator Arena",
-    "iconName": "skull",
-    "description": "Affrontez un panel d'ennemis variés avec système de classes, gestion d'inventaire et combats.",
-    "githubUrl": "https://github.com/Nolan-30/Gladiator-Arena",
-    "stack": [
-      { "name": "Java" }
-    ]
-  },
-  {
-    "id": 5,
-    "incoming": false,
-    "label": "Projet Scolaire",
-    "date": "Fev 2026 - Fev 2026",
-    "title": "Escape",
-    "iconName": "heart",
-    "description": "Survivez à une pluie d'objets en esquivant les bombes et en collectant des bonus.",
-    "image": "/images/Escape.png",
-    "githubUrl": "https://mega.nz/fm/fsh1WSyR",
-    "stack": [
-      { "name": "Unity" },
-      { "name": "C#" }
-    ]
-  },
-  {
-    "id": 6,
-    "incoming": false,
-    "label": "Projet Personnel",
-    "date": "Fev 2026 - Mar 2026",
-    "title": "Portfolio",
-    "iconName": "code",
-    "description": "Développement d'un site présentant mes projets et mes compétences.",
-    "githubUrl": "https://nolan-30.github.io/Portfolio/",
-    "stack": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "JavaScript" }
-    ]
-  },
-  {
-    "id": 7,
-    "incoming": false,
-    "label": "Projet Scolaire",
-    "date": "Mar 2026 - Mar 2026",
-    "title": "Trumposaur",
-    "iconName": "sparkles",
-    "description": "Clicker-Swiper de gestion de buzz. Transformez chaque décision politique en levier d'influence.",
-    "githubUrl": "https://github.com/Nolan-30/Trumposaur",
-    "stack": [
-      { "name": "Next.js" },
-            { "name": "Typescript" },
-      { "name": "Tailwind" }
 
-    ]
-  },
   {
     "id": 8,
     "incoming": false,
@@ -118,8 +127,10 @@
     "githubUrl": "",
     "stack": [
       { "name": "React" },
-      { "name": "CSS" },
-      { "name": "Node.js" }
+      { "name": "Node.js" },
+     { "name": "Express.js" },
+      { "name": "MongoDB" }
+
     ]
   },
   {
