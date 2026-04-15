@@ -1,5 +1,5 @@
 [
-    {
+  {
     "id": 1,
     "incoming": false,
     "label": "Projet Scolaire",
@@ -10,19 +10,18 @@
     "githubUrl": "https://github.com/Nolan-30/Trumposaur",
     "stack": [
       { "name": "Next.js" },
-            { "name": "Typescript" },
+      { "name": "Typescript" },
       { "name": "Tailwind" }
-
     ]
   },
-    {
+  {
     "id": 2,
     "incoming": false,
     "label": "Projet Personnel",
     "date": "Fev 2026 - Mar 2026",
     "title": "Portfolio",
     "iconName": "code",
-    "description": "Développement d'un site vitrine présentant mes projets, mes compétences techniques et créatives",
+    "description": "Développement d'un site vitrine présentant mes projets, mes compétences techniques et créatives.",
     "githubUrl": "https://nolan-30.github.io/Portfolio/",
     "stack": [
       { "name": "HTML" },
@@ -30,22 +29,21 @@
       { "name": "JavaScript" }
     ]
   },
-    {
+  {
     "id": 3,
     "incoming": false,
     "label": "Projet Scolaire",
     "date": "Fev 2026 - Fev 2026",
     "title": "Escape",
     "iconName": "heart",
-    "description": "Survivez à une pluie d'objets en esquivant les bombes tout en collectant des bonus pour augmenter votre score final.",
-    "image": "/images/Escape.png",
+    "description": "Esquivez les bombes et collectez les bonus pour maximiser votre score avant la fin du temps imparti.",
     "githubUrl": "https://mega.nz/fm/fsh1WSyR",
     "stack": [
       { "name": "Unity" },
       { "name": "C#" }
     ]
   },
-    {
+  {
     "id": 4,
     "incoming": false,
     "label": "Projet Scolaire",
@@ -56,14 +54,10 @@
     "githubUrl": "https://github.com/Nolan-30/Gladiator-Arena",
     "stack": [
       { "name": "Java" },
-       
-       { "name": "Maven" },
-       { "name": "IntelliJ IDEA" }
-   
+      { "name": "Maven" },
+      { "name": "IntelliJ IDEA" }
     ]
   },
-
- 
   {
     "id": 5,
     "incoming": false,
@@ -71,7 +65,7 @@
     "date": "Oct 2025 - Oct 2025",
     "title": "Bataille Navale",
     "iconName": "boat",
-    "description": "Simulation stratégique de combat naval face à une , IA développée avec une architecture modulaire.",
+    "description": "Simulation stratégique de combat naval face à une IA développée avec une architecture modulaire.",
     "githubUrl": "https://github.com/Nolan-30/Bataille-Navale",
     "stack": [
       { "name": "Python" }
@@ -85,7 +79,6 @@
     "title": "Penthouse",
     "iconName": "eye",
     "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
-    "image": "/images/PTS.jpg",
     "githubUrl": "https://nolan-30.github.io/Penthouse/",
     "stack": [
       { "name": "HTML" },
@@ -93,19 +86,14 @@
       { "name": "AOS" }
     ]
   },
-
-
-   {
+  {
     "id": 7,
     "incoming": false,
     "label": "Projet Scolaire",
     "date": "Sep 2025 - Dec 2025",
     "title": "Power Of Memory",
-    "iconLink": "link",
     "iconName": "brain",
-    "iconProfile": "profile",
     "description": "Conception en équipe d'une plateforme alliant profils personnalisés et classements dynamiques.",
-    "image": "/images/power-of-memory-interface.png",
     "githubUrl": "https://github.com/Nolan-30/Power-of-Memory",
     "stack": [
       { "name": "HTML" },
@@ -115,7 +103,6 @@
       { "name": "PHP" }
     ]
   },
-
   {
     "id": 8,
     "incoming": false,
@@ -128,9 +115,8 @@
     "stack": [
       { "name": "React" },
       { "name": "Node.js" },
-     { "name": "Express.js" },
+      { "name": "Express.js" },
       { "name": "MongoDB" }
-
     ]
   },
   {

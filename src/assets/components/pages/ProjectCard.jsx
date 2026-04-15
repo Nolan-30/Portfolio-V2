@@ -20,6 +20,7 @@ import Rocket from "../icons/Rocket";
 
 export default function ProjectCard({
   label,
+  image,
   date,
   title,
   iconLink,
@@ -99,8 +100,22 @@ export default function ProjectCard({
                   <Click size={80} color="#dd00ff" />
                 </div>
               )}
+
               <div className="titre-carte">
-                <span className="etiquette-projet">{label}</span>
+                <span className="etiquette-projet">{label} </span>
+                {image && (
+                  <img
+                    src={image}
+                    alt={title}
+                    className="visuel-projet"
+                    style={{
+                      width: "100%",
+                      height: "150px",
+                      borderRadius: "8px",
+                      marginTop: "10px",
+                    }}
+                  />
+                )}
                 <span className="date-projet">{date}</span>
               </div>
 
@@ -127,7 +142,7 @@ export default function ProjectCard({
                   </a>
                 ) : (
                   // icon pr les projets a venir
-                  <Rocket size={40} color="#7a7a7a" />
+                  <Rocket size={30} color="#7a7a7a" />
                 )}
               </div>
             </article>
