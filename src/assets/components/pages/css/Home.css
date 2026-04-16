@@ -208,12 +208,6 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .container-bento {
-    flex-direction: column-reverse; /* on met l'image en bas */
-    gap: 2rem;
-    padding-top: 5vh;
-  }
-
   .banniere-accueil {
     display: flex;
     flex-direction: column;

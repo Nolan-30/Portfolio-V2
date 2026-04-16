@@ -17,7 +17,7 @@ function App() {
       <div className="app-wrapper">
         <ScrollProgress />
 
-        {/* Ajout du LightPillar par-dessus les lignes */}
+        {/* Ajout du background LightPillar  */}
         <div
           style={{
             width: "100%",

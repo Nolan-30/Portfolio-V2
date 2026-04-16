@@ -146,6 +146,8 @@ export default function Home() {
 
           {/* FOOTER DE L'ACCUEIL */}
 
+          {/* test du StarBorder sur les icon */}
+
           <motion.div
             className="languages-icons"
             initial={{ opacity: 0 }}

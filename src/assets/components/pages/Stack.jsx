@@ -5,37 +5,37 @@ import GlareHover from "../animations/GlareHover";
 import FadeContent from "../animations/FadeContent";
 
 export default function Stack() {
-  // Données pour chaque language avec ajout des chemins d'images
+  // Données pr chaque language
   const technologies = [
     {
       img: "images/html-icon.png",
       name: "HTML / CSS",
       description:
-        "Ma porte d'entrée dans le web. C'est en réalisant mon premier projet perso, Penthouse que j'ai découvert une réelle passion pour le frontend et le plaisir de donner vie à des interfaces soignées.",
+        "Ma porte d'entrée dans le web. C'est avec mon projet Penthouse que j'ai découvert ma passion pour le développement frontend.",
     },
     {
       img: "images/react-icon.png",
       name: "React",
       description:
-        "Ma bibliothèque favorite pour créer des interfaces et animations fluides. Je l'utilise pour concevoir des composants réutilisables tout en excellant davantage en JavaScript.",
+        "Ma bibliothèque favorite pour créer des interfaces fluides et des composants réutilisables, tout en approfondissant le JavaScript.",
     },
     {
       img: "images/js-icon.png",
       name: "JavaScript",
       description:
-        "Le moteur de mes projets. C'est avec ce langage que j'ai appris à rendre mes interfaces vivantes et interactives, transformant des designs statiques en véritables expériences utilisateur.",
+        "Le langage qui rend mes interfaces vivantes, transformant des designs statiques en véritables expériences interactives.",
     },
     {
       img: "images/sql-icon.png",
       name: "SQL",
       description:
-        "L'art de structurer la donnée. Je l'utilise pour concevoir des bases de données relationnelles robustes et optimiser la persistance des informations au cœur de mes applications.",
+        "Essentiel pour structurer des bases de données relationnelles et optimiser la gestion des informations dans mes applications.",
     },
     {
       img: "images/php-icon.png",
       name: "PHP",
       description:
-        "Ce langage m'a permis de comprendre la gestion côté serveur et de créer mes premières architectures web complètes et fonctionnelles.",
+        "Un pilier pour la gestion côté serveur, qui m'a permis de bâtir mes premières architectures web complètes.",
     },
   ];
 
