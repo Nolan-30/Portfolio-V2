@@ -3,7 +3,9 @@ import "../animations/ThemeToggle";
 import GradientText from "../animations/GradientText";
 import ThemeToggle from "../animations/ThemeToggle";
 import GooeyNav from "../animations/GooeyNav";
+// import PillNav from "../animations/PillNav";
 import Profile from "../icons/Profile";
+// import logo from "/path/to/logo.svg";
 
 export default function Header() {
   return (

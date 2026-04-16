@@ -5,7 +5,7 @@ import GlareHover from "../animations/GlareHover";
 import FadeContent from "../animations/FadeContent";
 
 export default function Stack() {
-  // Données pour chaque carte avec ajout des chemins d'images
+  // Données pour chaque language avec ajout des chemins d'images
   const technologies = [
     {
       img: "images/html-icon.png",

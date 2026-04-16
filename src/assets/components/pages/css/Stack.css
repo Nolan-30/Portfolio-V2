@@ -1,6 +1,6 @@
 .languages-container {
   display: flex;
-  flex-wrap: wrap; /* Passer a la ligne si y a plus de place  */
+  flex-wrap: wrap; /* passe la ligne si y a plus de place  */
   justify-content: center;
   gap: 50px;
   max-width: 1200px;

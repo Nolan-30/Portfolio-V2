@@ -43,8 +43,8 @@
   padding: 2rem;
   width: 100%;
   height: 100%;
-  /* background-color: rgb(0, 0, 0);
-  border: 1px solid grey; */
+  background-color: rgb(0, 0, 0);
+  border: 1px solid grey;
   display: flex;
   flex-direction: column;
 
@@ -54,7 +54,9 @@
 
 .carte-projet:hover {
   cursor: pointer;
-  transform: scale(1.01);
+  transform: scale(1.03);
+
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .carte-projet p {
@@ -63,9 +65,22 @@
   font-size: 1rem;
   margin-bottom: 1.5rem;
 }
+
+/* test effet de zoom sur une carte de projet */
+
+.carte-projet {
+  border-radius: 10px;
+  border: 2px solid rgba(41, 41, 41, 0.489);
+  margin-bottom: 10%;
+
+  transition: transform 1s ease-out;
+}
+
 /* pr que les dates reste droite */
 .date-projet {
   width: 100%;
+  /* deplacement de la date du projet */
+  margin-left: 15%;
 }
 
 .titre-carte {
@@ -83,7 +98,6 @@
 
 .icons {
   display: flex;
-
   margin-bottom: 15%;
   justify-content: center;
 }
@@ -97,7 +111,7 @@
 }
 
 .projet-item {
-  overflow: hidden; /* Empêche tout débordement horizontal */
+  /* overflow: hidden;  Empêche tout débordement horizontal  */
   width: 100%;
   display: flex;
   justify-content: center;
