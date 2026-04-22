@@ -50,7 +50,7 @@ export default function Footer() {
         <p className="mail">
           <a href="mailto:nolan.dalmeida07@gmail.com">
             <SplitText
-              text="nolan.dalmeid07@gmail.com"
+              text="nolan.dalmeida07@gmail.com"
               className="collaboration"
               delay={50}
               duration={2.5}

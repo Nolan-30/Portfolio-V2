@@ -109,11 +109,12 @@ export default function ProjectCard({
 
             <div className="titre-carte">
               <span className="etiquette-projet">{label} </span>
+
               {image && (
                 <img
                   src={image}
                   alt={title}
-                  className="visuel-projet"
+                  // className="visuel-projet"
                   style={{
                     width: "100%",
                     height: "100%",

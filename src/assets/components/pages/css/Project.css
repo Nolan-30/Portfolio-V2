@@ -117,6 +117,12 @@
   justify-content: center;
 }
 
+.projet-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .stack-used {
   display: flex;
   flex-wrap: wrap; /* va a la ligne si y a plus de place */
@@ -185,29 +191,19 @@
 /* RESPONSIVITE */
 
 @media (max-width: 768px) {
+  .titre-section {
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+  .title-sous-texte {
+    margin-top: -10%; /* on colle un peu le sous texte au titre */
+    font-size: 1rem;
+  }
   .carte-projet {
-    width: 80%;
+    display: flex;
+    justify-content: center;
   }
-  .projet-a-venir h2 {
-    /* augmententation de l'espace*/
-    margin-top: 20%;
-  }
-
-  .stack-used span img {
-    /* ptit reduction de la taille des images */
-    height: 18px;
-  }
-  .lien-projet {
+  .stack-used {
     font-size: 0.8rem;
-  }
-  /* replacement du txt  */
-  .projets-realises-placement {
-    font-size: 2rem;
-    right: 120px;
-  }
-
-  .projets-a-venir-placement {
-    font-size: 2rem;
-    right: 80px;
   }
 }

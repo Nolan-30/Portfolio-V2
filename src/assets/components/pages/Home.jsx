@@ -170,8 +170,8 @@ export default function Home() {
             </a>
             <a href="#" className="icon-link">
               <img
-                src="images/ts.png"
-                alt="Typescript"
+                src="images/nodejs.png"
+                alt="Node.js"
                 height={30}
                 width={25}
               />
