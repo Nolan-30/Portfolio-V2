@@ -6,6 +6,7 @@ import Footer from "./assets/components/pages/Footer";
 import Home from "./assets/components/pages/Home";
 import Project from "./assets/components/pages/Project";
 import Stack from "./assets/components/pages/Stack";
+import Contact from "./assets/components/pages/Contact";
 import FadeContent from "./assets/components/animations/FadeContent";
 import { ScrollProgress } from "./assets/components/animations/ScrollProgress";
 import FloatingLines from "./assets/components/animations/FloatingLines";
@@ -54,7 +55,7 @@ function App() {
         <Project />
         <Stack />
       </main>
-
+      <Contact />
       <Footer />
     </Router>
   );

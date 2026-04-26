@@ -10,7 +10,7 @@ import Profile from "../icons/Profile";
 export default function Header() {
   return (
     <header>
-      <nav className="nav-bar">
+      <section className="nav-bar">
         <div className="logo">
           <GradientText
             colors={["#570562", "#FF9FFC", "#B19EEF"]}
@@ -32,7 +32,7 @@ export default function Header() {
 
           <ThemeToggle />
         </div>
-      </nav>
+      </section>
     </header>
   );
 }
