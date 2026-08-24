@@ -1,11 +1,11 @@
 /* --- Variables  pour le thème --- */
 :root {
   --couleur-fond: #ffffff;
-  --couleur-texte: #0f0f0f;
+  --couleur-texte: #ffffff;
   --couleur-accent: #000000;
   --fond-carte: #f4f4f5;
   --couleur-bordure: #e4e4e7;
-  --sous-texte: #52525b;
+  --sous-texte: #888888;
 }
 
 [data-theme="dark"] {

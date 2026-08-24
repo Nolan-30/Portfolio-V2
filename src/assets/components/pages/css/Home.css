@@ -1,3 +1,7 @@
+body {
+  background: #000000;
+}
+
 .banniere-accueil {
   display: flex;
   flex-direction: column;
@@ -19,6 +23,17 @@
   padding-bottom: 100px;
 }
 
+.container-accueil img {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.container-accueil img:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
 .hero-background {
   pointer-events: none; /* pr pouvoir cliquer sur les btn */
 }
@@ -33,6 +48,7 @@
   justify-content: center;
 }
 .weight-bold {
+  color: white;
   font-size: 2rem;
   text-align: center;
   max-width: 1000px;
@@ -61,12 +77,11 @@
   right: -10px;
   bottom: -10px;
   border-radius: 35px;
-
   z-index: -1;
 }
 
 .contenu-banniere {
-  margin-left: 20%;
+  margin-left: 10%;
   flex: 1; /* txt prend 60 % de la width */
   display: flex;
   flex-direction: column;
@@ -135,11 +150,6 @@ h1 {
     box-shadow 0.2s;
 }
 
-.bouton-principal {
-  background-color: var(--couleur-accent);
-  color: #fff;
-}
-
 .bouton-secondaire {
   border: 1px solid rgb(16, 15, 15);
   color: #fff;
@@ -147,6 +157,12 @@ h1 {
 
 .bouton:hover {
   transform: translateY(-3px) scale(1.03);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
 }
 
 /* box icon*/
@@ -195,54 +211,63 @@ h1 {
   white-space: nowrap; /* empeche le txt de passer a la ligne */
 }
 /* ========================================= */
-/* RESPONSIVITE                              */
+/* QRESPONSIVITE                              */
 /* ========================================= */
-
-@media (max-width: 1024px) {
-  .banniere-accueil {
-    padding: 0 3%;
-  }
-  h1 {
-    font-size: 3.5rem;
-  }
-}
 
 @media (max-width: 768px) {
   .banniere-accueil {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .weight-bold {
+    font-size: 1.1rem;
+  }
+
+  .container-accueil {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
   }
 
   .bloc-image {
     flex: 0 0 100%;
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     margin: 0 auto;
   }
+  .badge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+  }
 
-  .portrait-photo {
-    max-height: 50vh;
+  .badge {
+    margin-top: 5%;
   }
 
   .contenu-banniere {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex: 0 0 100%;
+    margin: 0;
   }
 
   .contenu-banniere h1 {
+    /* prenom */
     font-size: 2.2rem;
   }
 
-  .titre-principal {
-    text-align: center;
+  .subtitle {
+    margin-left: -5%;
   }
 
-  .groupe-boutons {
-    justify-content: center;
-    flex-direction: column;
+  .grp-btn {
+    font-size: 0.5rem;
+  }
+  .bouton-secondaire {
+    font-size: 0.8rem;
+  }
+
+  .languages-icons {
     gap: 1rem;
   }
 }

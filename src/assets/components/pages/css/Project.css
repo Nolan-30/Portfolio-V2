@@ -78,21 +78,17 @@
 
 /* pr que les dates reste droite */
 .date-projet {
-  width: 100%;
-  /* deplacement de la date du projet */
-  margin-left: 15%;
+  text-align: right;
 }
 
 .titre-carte {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 90px;
+  justify-content: space-between; /* Aligne l'étiquette à gauche et la date à droite */
   font-size: 0.55rem;
   margin-bottom: 1.5rem;
   color: var(--sous-texte);
   text-transform: uppercase;
-  /* mettre une police */
   width: 100%;
 }
 
@@ -102,12 +98,22 @@
   justify-content: center;
 }
 
+.img-projet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
 .img-projet img {
   border-radius: 10px;
-  /* taille fixe pr chaque image d'un projet*/
   height: 200px;
   width: 300px;
-  border: 1px solid var(--couleur-bordure);
+  object-fit: cover;
+  border: 1px solid grey;
+
+  display: block;
 }
 
 .projet-item {

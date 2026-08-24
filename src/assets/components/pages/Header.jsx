@@ -24,14 +24,32 @@ export default function Header() {
           </GradientText>
         </div>
 
-        <div className="nav-links">
+        {/* <div className="nav-links">
           <a href="#accueil">Accueil</a>
           <a href="#projets">Projets</a>
           <a href="#stack">Stack</a>
           <a href="#contact">Contact</a>
 
           <ThemeToggle />
-        </div>
+        </div> */}
+
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="#accueil">Home</a>
+            </li>
+            <li>
+              <a href="#projets">Projects</a>
+            </li>
+            <li>
+              <a href="#stack">Stack</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <div class="indicator"></div>
+          </ul>
+        </nav>
       </section>
     </header>
   );

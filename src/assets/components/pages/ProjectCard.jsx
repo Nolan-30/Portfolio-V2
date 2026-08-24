@@ -108,23 +108,16 @@ export default function ProjectCard({
             )}
 
             <div className="titre-carte">
-              <span className="etiquette-projet">{label} </span>
-
-              {image && (
-                <img
-                  src={image}
-                  alt={title}
-                  // className="visuel-projet"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    borderRadius: "8px",
-                    marginTop: "10px",
-                  }}
-                />
-              )}
+              <span className="etiquette-projet">{label}</span>
               <span className="date-projet">{date}</span>
             </div>
+
+            {/* On sort l'image de .titre-carte et on lui met sa classe dédiée */}
+            {image && (
+              <div className="img-projet">
+                <img src={image} alt={title} />
+              </div>
+            )}
 
             <span className="degrader-violet">
               <h3>{title}</h3>

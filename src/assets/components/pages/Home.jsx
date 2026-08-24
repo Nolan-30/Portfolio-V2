@@ -1,6 +1,6 @@
 import "./css/Home.css";
 import { motion } from "framer-motion";
-// import LightRays from "../animations/LightRays";
+import LightPillar from "../animations/LightPillar";
 import TextType from "../animations/TextType";
 import StarBorder from "../animations/StarBorder";
 import SplitText from "../animations/SplitText";
@@ -17,21 +17,24 @@ const handleAnimationComplete = () => {
 export default function Home() {
   return (
     <main id="accueil" className="banniere-accueil">
-      {/* <LightRays
-        raysOrigin="top-center"
-        raysColor="#ffffff"
-        rayLength={0.5}
-        lightSpread={5.5}
-        raysSpeed={0.5}
-      /> */}
+      <div className="hero-background-animation">
+        <LightPillar
+          topColor="#5227FF"
+          bottomColor="rgb(144, 95, 151)"
+          intensity={1.2}
+          pillarWidth={3.5}
+          pillarHeight={0.5}
+          mixBlendMode="screen"
+        />
+      </div>
       <motion.div
         className="welcome-msg"
-        initial={{ opacity: 0, y: -100 }} // Commence invisible et 50px au-dessus
-        animate={{ opacity: 1, y: 0 }} // Devient visible et à sa place
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 1, // L'animation dure 0.8 seconde
-          delay: 0.1, // Petit délai de 0.1s avant de démarrer
-          ease: "easeOut", // Ralentit à la fin pour plus de douceur
+          duration: 1,
+          delay: 0.1,
+          ease: "easeOut",
         }}
       >
         {/* <GradientText
@@ -71,8 +74,10 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <span className="point">•</span> DÉVELOPPEUR Web Full-Stack - CODING
-            FACTORY
+            <div className="badge-container">
+              <span className="point">•</span> DÉVELOPPEUR Web FullStack -
+              CODING FACTORY
+            </div>
           </motion.div>
 
           {/* Le grand titre aligné à gauche */}
@@ -105,6 +110,7 @@ export default function Home() {
           >
             <TextType
               text={["Je crée des sites web modernes et sécurisés."]}
+              className="subtitle"
               typingSpeed={50}
               pauseDuration={200}
               showCursor
