@@ -45,7 +45,7 @@ function App() {
           />
         </div>
 
-        <div style={{ position: "relative", zIndex: 1 }}>
+        <div style={{ position: "relative", zIndex: 3 }}>
           <Header />
           <Home />
         </div>
@@ -53,7 +53,6 @@ function App() {
 
       <main style={{ position: "relative", zIndex: 2, background: "#000" }}>
         <Project />
-        <Stack />
       </main>
       <Contact />
       <Footer />

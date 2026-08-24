@@ -1,53 +1,62 @@
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./css/Header.css";
-import "../animations/ThemeToggle";
 import GradientText from "../animations/GradientText";
-import ThemeToggle from "../animations/ThemeToggle";
-import GooeyNav from "../animations/GooeyNav";
-// import PillNav from "../animations/PillNav";
 import Profile from "../icons/Profile";
-// import logo from "/path/to/logo.svg";
+
+const navItems = [
+  { id: "accueil", label: "Home" },
+  { id: "projets", label: "Projects" },
+  // { id: "stack", label: "Stack" },
+  { id: "contact", label: "Contact" },
+];
 
 export default function Header() {
+  const [activeTab, setActiveTab] = useState("projets");
+
   return (
-    <header>
+    <header className="header-container">
       <section className="nav-bar">
+        {/* LOGO À GAUCHE */}
         <div className="logo">
           <GradientText
             colors={["#570562", "#FF9FFC", "#B19EEF"]}
             animationSpeed={8}
             showBorder={false}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-              <Profile size={28} color="currentColor" />
+            <div className="name">
+              <Profile size={30} color="currentColor" />
               Nolan D'almeida.
             </div>
           </GradientText>
         </div>
 
-        {/* <div className="nav-links">
-          <a href="#accueil">Accueil</a>
-          <a href="#projets">Projets</a>
-          <a href="#stack">Stack</a>
-          <a href="#contact">Contact</a>
-
-          <ThemeToggle />
-        </div> */}
-
-        <nav class="navbar">
+        {/* NAVBAR À DROITE */}
+        <nav className="navbar">
           <ul>
-            <li>
-              <a href="#accueil">Home</a>
-            </li>
-            <li>
-              <a href="#projets">Projects</a>
-            </li>
-            <li>
-              <a href="#stack">Stack</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-            <div class="indicator"></div>
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  className={activeTab === item.id ? "active" : ""}
+                  onClick={() => setActiveTab(item.id)}
+                >
+                  {/* indicateur violet */}
+                  {activeTab === item.id && (
+                    <motion.div
+                      layoutId="active-indicator"
+                      className="indicator"
+                      transition={{
+                        type: "spring",
+                        stiffness: 380,
+                        damping: 30,
+                      }}
+                    />
+                  )}
+                  <span className="nav-text">{item.label}</span>
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </section>

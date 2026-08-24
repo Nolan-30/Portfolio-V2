@@ -1,141 +1,9 @@
 [
   {
-    "id": 10,
-    "incoming": false,
-    "label": "Projet Scolaire",
-
-  "image" : "images/find-your-doctor.png",
-    "date": "Avr 2026 - Mai 2026",
-    "title": "Find Your Doctor",
-  "iconName": "heart",
-    "description": "Recherche de professionnels de santé à partir de données publiques, avec filtres et géolocalisation des praticiens",
-    "githubUrl": "https://nolan-30.alwaysdata.net/",
-    "stack": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "JavaScript" },
-      { "name": "SQL" },
-      { "name": "PHP" }
-    ]
-  },
-  {
     "id": 1,
     "incoming": false,
     "label": "Projet Scolaire",
-
-  "image" : "images/clicker.png",
-    "date": "Mar 2026 - Mar 2026",
-    "title": "Jeu Clicker",
-    "iconName": "click",
-    "description": "Clicker-Swiper de gestion de buzz. Transformez chaque décision politique en levier d'influence.",
-    "githubUrl": "https://github.com/Trisrav/trumposaur",
-    "stack": [
-      { "name": "Next.js" },
-      { "name": "Typescript" },
-      { "name": "Tailwind" }
-    ]
-  },
-  {
-    "id": 2,
-    "incoming": false,
-    "label": "Projet Personnel",
-        "image" :"images/portfolio.png",
-  
-    "date": "Fev 2026 - Mar 2026",
-    "title": "Portfolio",
-    "iconName": "code",
-    "description": "Développement d'un site vitrine présentant mes projets, mes compétences techniques et créatives.",
-    "githubUrl": "https://nolan-30.github.io/Portfolio/",
-    "stack": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "JavaScript" }
-    ]
-  },
-  {
-    "id": 3,
-    "incoming": false,
-    "label": "Projet Scolaire",
-        "image" :"images/portfolio.png",
-    "date": "Fev 2026 - Fev 2026",
-    "title": "Escape",
-    "iconName": "heart",
-    "description": "Esquivez les bombes et collectez les bonus pour maximiser votre score avant la fin du temps imparti.",
-    "githubUrl": "https://mega.nz/fm/fsh1WSyR",
-    "stack": [
-      { "name": "Unity" },
-      { "name": "C#" }
-    ]
-  },
-  {
-    "id": 4,
-    "incoming": false,
-    "label": "Projet Scolaire",
-        "image" :"images/portfolio.png",
-    "date": "Jan 2026 - Jan 2026",
-    "title": "Gladiator Arena",
-    "iconName": "skull",
-    "description": "Affrontez un panel d'ennemis variés avec système de classes, gestion d'inventaire pour un gameplay tactique.",
-    "githubUrl": "https://github.com/Nolan-30/Gladiator-Arena",
-    "stack": [
-      { "name": "Java" },
-      { "name": "Maven" },
-      { "name": "IntelliJ IDEA" }
-    ]
-  },
-  {
-    "id": 5,
-    "incoming": false,
-    "label": "Projet Scolaire",
-           "image" :"images/bataille-naval.png",
-    "date": "Oct 2025 - Oct 2025",
-    "title": "Bataille Navale",
-    "iconName": "boat",
-    "description": "Simulation stratégique de combat naval face à une IA développée avec une architecture modulaire.",
-    "githubUrl": "https://github.com/Nolan-30/Bataille-Navale",
-    "stack": [
-      { "name": "Python" }
-    ]
-  },
-  {
-    "id": 6,
-    "incoming": false,
-    "label": "Projet Personnel", 
-          "image" :"images/portfolio.png",
-    "date": "Oct 2025 - Jan 2026",
-    "title": "Penthouse",
-    "iconName": "eye",
-    "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
-    "githubUrl": "https://nolan-30.github.io/Penthouse/",
-    "stack": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "AOS" }
-    ]
-  },
-  {
-    "id": 7,
-    "incoming": false,
-    "label": "Projet Scolaire",
-            "image" :"images/power-of-memory.png",
-    "date": "Sep 2025 - Dec 2025",
-    "title": "Power Of Memory",
-    "iconName": "brain",
-    "description": "Conception en équipe d'une plateforme alliant profils personnalisés et classements dynamiques.",
-    "githubUrl": "https://github.com/Nolan-30/Power-of-Memory",
-    "stack": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "JavaScript" },
-      { "name": "SQL" },
-      { "name": "PHP" }
-    ]
-  },
-  {
-    "id": 8,
-    "incoming": false,
-    "label": "Projet Scolaire",
-        "image" :"images/snk.png",
+    "image": "images/snk.png",
     "date": "Oct 2025 - Mai 2026",
     "title": "SNK Wiki",
     "iconName": "question",
@@ -149,18 +17,87 @@
     ]
   },
   {
-    "id": 9,
+    "id": 2,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "image": "images/find-your-doctor.png",
+    "date": "Avr 2026 - Mai 2026",
+    "title": "Find Your Doctor",
+    "iconName": "heart",
+    "description": "Recherche de professionnels de santé à partir de données publiques, avec filtres et géolocalisation des praticiens",
+    "githubUrl": "https://nolan-30.alwaysdata.net/",
+    "stack": [
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "JavaScript" },
+      { "name": "SQL" },
+      { "name": "PHP" }
+    ]
+  },
+  {
+    "id": 3,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "image": "images/clicker.png",
+    "date": "Mar 2026 - Mar 2026",
+    "title": "Jeu Clicker",
+    "iconName": "click",
+    "description": "Clicker-Swiper de gestion de buzz. Transformez chaque décision politique en levier d'influence.",
+    "githubUrl": "https://github.com/Trisrav/trumposaur",
+    "stack": [
+      { "name": "Next.js" },
+      { "name": "Typescript" },
+      { "name": "Tailwind" }
+    ]
+  },
+  {
+    "id": 4,
     "incoming": false,
     "label": "Projet Personnel",
-    "image" :"images/portfolio.png",
-    "date": "À venir",
-    "title": "Penthouse V2",
-    "iconName": "sparkles",
-    "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
-    "githubUrl": "",
+    "image": "images/portfolio.png",
+    "date": "Fev 2026 - Mar 2026",
+    "title": "Portfolio",
+    "iconName": "code",
+    "description": "Développement d'un site vitrine présentant mes projets, mes compétences techniques et créatives.",
+    "githubUrl": "https://nolan-30.github.io/Portfolio/",
     "stack": [
-      { "name": "React" },
-      { "name": "Tailwind" }
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "JavaScript" }
+    ]
+  },
+  {
+    "id": 5,
+    "incoming": false,
+    "label": "Projet Personnel",
+    "image": "images/portfolio.png",
+    "date": "Oct 2025 - Jan 2026",
+    "title": "Penthouse",
+    "iconName": "eye",
+    "description": "Réalisation d'une vitrine immersive sublimant l'intrigue, les personnages et les trois saisons de l'œuvre.",
+    "githubUrl": "https://nolan-30.github.io/Penthouse/",
+    "stack": [
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "AOS" }
+    ]
+  },
+  {
+    "id": 6,
+    "incoming": false,
+    "label": "Projet Scolaire",
+    "image": "images/power-of-memory.png",
+    "date": "Sep 2025 - Dec 2025",
+    "title": "Power Of Memory",
+    "iconName": "brain",
+    "description": "Conception en équipe d'une plateforme alliant profils personnalisés et classements dynamiques.",
+    "githubUrl": "https://github.com/Nolan-30/Power-of-Memory",
+    "stack": [
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "JavaScript" },
+      { "name": "SQL" },
+      { "name": "PHP" }
     ]
   }
 ]
