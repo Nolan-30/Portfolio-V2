@@ -5,9 +5,8 @@ import GradientText from "../animations/GradientText";
 import Profile from "../icons/Profile";
 
 const navItems = [
-  { id: "accueil", label: "Home" },
-  { id: "projets", label: "Projects" },
-  // { id: "stack", label: "Stack" },
+  { id: "accueil", label: "Accueil" },
+  { id: "projets", label: "Projets" },
   { id: "contact", label: "Contact" },
 ];
 

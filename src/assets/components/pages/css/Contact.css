@@ -1,23 +1,34 @@
 .contact-section {
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
-  /* background-color: #060010; */
-  color: #ffffff;
-  min-height: 400px;
-  margin-top: 10%;
-  background: radial-gradient(circle at center, #3c0062 0%, #060010 100%);
+  overflow: hidden;
+  isolation: isolate;
+  background: radial-gradient(circle at center, #620082 0%, #0d0010 100%);
+}
+
+.contact-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .contact-container {
+  position: relative;
+  z-index: 10;
   display: flex;
   width: 100%;
   max-width: 1000px;
   gap: 4rem;
-  align-items: flex-start;
+  align-items: center;
 }
-
 /* Partie gauche */
 .contact-left {
   flex: 1;
@@ -74,6 +85,20 @@
   border-color: #f472b6;
 }
 
+.form-group input,
+.form-group textarea {
+  position: relative;
+  z-index: 11;
+  width: 100%;
+  background-color: rgba(15, 10, 25, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  color: #ffffff;
+  outline: none;
+}
+
 .submit-btn {
   padding: 1rem 2rem;
   border-radius: 10px;
@@ -86,6 +111,9 @@
     transform 0.2s ease,
     opacity 0.2s ease;
   align-self: flex-start;
+
+  position: relative;
+  z-index: 11;
 }
 
 .submit-btn:hover {

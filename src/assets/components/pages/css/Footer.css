@@ -1,54 +1,9 @@
 footer {
-  margin-top: 10%;
   text-align: center;
   padding: 5rem 1rem;
-  border-top: 1px solid var(--couleur-bordure);
-}
-
-.collaboration {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-
-.alternance {
-  display: flex;
-  justify-content: center;
-}
-
-.alternance p {
-  margin-left: 5px;
-}
-
-.searching-icon {
-  margin-left: 10px;
-}
-
-.lien-email {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--couleur-texte);
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s;
-  display: inline-block;
-  margin-top: 1rem;
-}
-
-.lien-email:hover {
-  border-bottom: 2px solid var(--couleur-texte);
-}
-
-.mail {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  padding: 10px 20px;
-  display: inline-block;
-  font-size: 1.2rem;
 }
 
 .rs {
-  margin: 2rem 0;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -59,7 +14,6 @@ footer {
   font-size: 1.1rem;
   font-weight: 600;
   transition: transform 0.5s;
-  margin-top: -2rem;
 }
 
 .rs a:hover {
@@ -67,15 +21,9 @@ footer {
 }
 
 .droits-auteur {
-  font-size: 0.8rem;
+  margin-top: 2%;
+  font-size: 2rem;
   color: var(--sous-texte);
-}
-
-.placement-stack {
-  margin-top: -10%;
-}
-.placement-stack p {
-  font-size: 1.5rem;
 }
 
 /* RESPONSIVITE */

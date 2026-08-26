@@ -84,7 +84,7 @@
 .titre-carte {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Aligne l'étiquette à gauche et la date à droite */
+  justify-content: space-between;
   font-size: 0.55rem;
   margin-bottom: 1.5rem;
   color: var(--sous-texte);
@@ -107,17 +107,15 @@
 }
 
 .img-projet img {
-  border-radius: 10px;
-  height: 200px;
-  width: 300px;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
-  border: 1px solid grey;
 
   display: block;
 }
 
 .projet-item {
-  /* overflow: hidden;  Empêche tout débordement horizontal  */
   width: 100%;
   display: flex;
   justify-content: center;

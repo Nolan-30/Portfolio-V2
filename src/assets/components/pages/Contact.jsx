@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./css/Contact.css";
+import WebThreads from "../animations/WebThreads";
 
 const Contact = () => {
   const formRef = useRef();
@@ -12,7 +13,6 @@ const Contact = () => {
     setLoading(true);
     setStatusMessage("");
 
-    //  clés EmailJS intégrées
     const SERVICE_ID = "service_pt0wilp";
     const TEMPLATE_ID = "template_hlqgz28";
     const PUBLIC_KEY = "dJQ_EgGvhSFV0nufM";
@@ -37,14 +37,16 @@ const Contact = () => {
 
   return (
     <section className="contact-section">
+      <div className="contact-bg">
+        <WebThreads color1="#e100ff" color3="#070707" speed={0.4} />
+      </div>
+
       <div className="contact-container">
-        {/* COTE GAUCHE */}
         <div className="contact-left">
           <h1>Me contacter</h1>
           <img src="images/contact.png" width={400} alt="Contact" />
         </div>
 
-        {/* COTE DROIT */}
         <div className="contact-right">
           <form ref={formRef} onSubmit={sendEmail} className="contact-form">
             <div className="form-group">
@@ -72,7 +74,6 @@ const Contact = () => {
               {loading ? "Envoi..." : "Envoyer"}
             </button>
 
-            {/* Message de confirmation ou d'erreur */}
             {statusMessage && (
               <p
                 style={{

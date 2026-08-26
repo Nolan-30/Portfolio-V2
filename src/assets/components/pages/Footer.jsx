@@ -22,81 +22,15 @@ export default function Footer() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <h2>
-          {" "}
-          <SplitText
-            text="Prêt à collaborer ? "
-            className="collaboration"
-            delay={50}
-            duration={1.25}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="-100px"
-            textAlign="center"
-            onLetterAnimationComplete={handleAnimationComplete}
-            showCallback
-          />
-        </h2>
-        <div className="alternance">
-          <p>Je suis actuellement à la recherche d'une alternance </p>
-          <div className="searching-icon">
-            <Searching size={20} color="#ffffff" />{" "}
-          </div>
-        </div>
-
-        <p className="mail">
-          <a href="mailto:nolan.dalmeida07@gmail.com">
-            <SplitText
-              text="nolan.dalmeida07@gmail.com"
-              className="collaboration"
-              delay={50}
-              duration={2.5}
-              ease="power3.out"
-              splitType="chars"
-              from={{ opacity: 0, y: 40 }}
-              to={{ opacity: 1, y: 0 }}
-              threshold={0.1}
-              rootMargin="-100px"
-              textAlign="center"
-              onLetterAnimationComplete={handleAnimationComplete}
-              showCallback
-            />
-          </a>
-          <span class="style"></span>
-        </p>
-
-        {/* <div className="rs">
-          <motion.a
-            href="https://github.com/Nolan-30/Nolan"
-            target="_blank"
-            rel="noreferrer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Github
-          </motion.a>
-          <motion.a
-            href="https://www.linkedin.com/in/nolan-d-almeida-153112375/"
-            target="_blank"
-            rel="noreferrer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            LinkedIn
-          </motion.a>
-        </div> */}
         <div className="rs">
           <a href="https://github.com/Nolan-30/Nolan" target="_blank">
-            <Github size={50} color="#ffffff" />{" "}
+            <Github size={75} color="#ffffff" />{" "}
           </a>
           <a
             href="https://www.linkedin.com/in/nolan-d-almeida-153112375/"
             target="_blank"
           >
-            <LinkedIn size={50} color="#ffffff" />
+            <LinkedIn size={75} color="#ffffff" />
           </a>
         </div>
 
